@@ -13,7 +13,7 @@ Implement a RESTful API spring-boot application that provides the following APIs
 • Write a scheduler in the same app to poll for new items in the last hour and send an email (Optional)
 =======================================================================================================================================
 
-git clone https://github.com/spring-guides/gs-uploading-files.git
+git clone https://github.com/ChanCoolKat/appPlayground.git
 	
 - To compile and run Spring app
 	mvn spring-boot:run
