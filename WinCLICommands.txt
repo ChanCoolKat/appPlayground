@@ -1,0 +1,1191 @@
+-------------------------------------------------------------------------------------------------------------
+References:
+-------------------------------------------------------------------------------------------------------------
+\\OSCMS-FS-04\Users4\CMJackson1\Home\Coding\Manuals_and_Docs\Misc\WindowsKeyboardShortcuts.txt
+\\OSCMS-FS-04\Users4\CMJackson1\Home\Coding\Manuals_and_Docs\Misc\LinuxDosMysqlComandReference.txt
+
+Control Panel Shortcuts
+http://www.geekgirls.com/windowsxp_controlpanel.htm
+
+Force Internet Explorer to use a specific Java Runtime Environment install?
+http://stackoverflow.com/questions/71254/force-internet-explorer-to-use-a-specific-java-runtime-environment-install
+
+MinGW - Minimalist GNU for Windows
+http://www.mingw.org/wiki/MSYS
+
+GNU Grep For Windows 
+http://www.steve.org.uk/Software/grep/
+
+2.3 How make Processes a Makefile
+http://www.gnu.org/software/make/manual/make.html#How-Make-Works
+
+Preparing and Running Make
+http://www.gnu.org/software/make/manual/make.html#Preparing
+
+Makefiles by example
+http://mrbook.org/tutorials/make/
+
+
+
+GetGnuWin32 - Maintaining a Gnuwin32 Package archive
+http://getgnuwin32.sourceforge.net/
+
+Deploying a WAR File to OC4J From the Command Line
+http://buttso.blogspot.com/2006/11/deploying-war-file-to-oc4j-from.html
+
+Deploying a EAR File to OC4J From the Command Line
+http://buttso.blogspot.com/2006/11/deploying-ear-file-to-oc4j-from.html
+
+Using OC4J Ant Tasks for Deployment
+http://docs.oracle.com/cd/B31017_01/web.1013/b28951/anttasks.htm
+
+Linux vi and vim editor: Tutorial and advanced features
+http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html
+
+Setx
+http://technet.microsoft.com/en-us/library/cc755104(WS.10).aspx
+
+------------------------
+CAB
+------------------------
+MakeCab : Part 1 - Compress single file 
+http://dataerror.blogspot.com/2005/10/makecab-part-1-compress-single-file.html
+
+Creating CAB files using MakeCab.exe
+http://www.dotnetthoughts.net/2008/05/02/creating-cab-files-using-makecabexe/
+
+Packaging and Deploying Web Parts for Microsoft Windows SharePoint Services
+http://msdn.microsoft.com/en-us/library/ms916839.aspx
+
+MAKECAB.EXE Directive File Syntax
+http://msdn.microsoft.com/en-us/library/bb417343.aspx#dir_file_syntax
+
+How To Manually Modify and Rebuild CAB Files
+http://support.microsoft.com/kb/176810
+
+MakeCab.exe and SharePoint 2007 WSP Size (Splitting CAB files into multiple files issue)
+http://calehoopes.blogspot.com/2008/07/makecabexe-and-sharepoint-2007-wsp-size.html
+
+Strong Opinion: Say No To MAKECAB.EXE 
+http://www.pseale.com/blog/StrongOpinionSayNoToMAKECABEXE.aspx
+
+------------------------
+Powershell Reference:
+------------------------
+Windows PowerShell Examples
+http://www.computerperformance.co.uk/powershell/powershell_example_basic.htm
+
+Scripting with Windows Powershell
+http://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx
+
+
+---------------------------
+CLI SVN Tool Reference
+---------------------------
+Command-Line Subversion Tutorial, Part 1: The Basics
+http://pointbeing.net/weblog/2009/03/command-line-subversion-tutorial-part-1.html
+
+Slik Subversion client...
+http://www.sliksvn.com/en/download
+
+
+--------------------------
+Google Search Basics:
+--------------------------
+"Dogs" +doberman
+
+- Phrase search ("")
+By putting double quotes around a set of words, you are telling Google to consider 
+the exact words in that exact order without any change. Google already uses the order and 
+the fact that the words are together as a very strong signal and will stray from it only for a 
+good reason, so quotes are usually unnecessary. By insisting on phrase search you might be missing 
+good results accidentally. For example, a search for [ "Alexander Bell" ] (with quotes) will miss 
+the pages that refer to Alexander G. Bell. 
+
+- Search within a specific website (site:)
+Google allows you to specify that your search results must come from a given website. For example, 
+the query [ iraq site:nytimes.com ] will return pages about Iraq but only from nytimes.com. The 
+simpler queries [ iraq nytimes.com ] or [ iraq New York Times ] will usually be just as good, 
+though they might return results from other sites that mention the New York Times. You can also 
+specify a whole class of sites, for example [ iraq site:.gov ] will return results only from a .gov 
+domain and [ iraq site:.iq ] will return results only from Iraqi sites. 
+
+- Terms you want to exclude (-)
+Attaching a minus sign immediately before a word indicates that you do not want pages that contain 
+this word to appear in your results. The minus sign should appear immediately before the word and 
+should be preceded with a space. For example, in the query [ anti-virus software ], the minus sign 
+is used as a hyphen and will not be interpreted as an exclusion symbol; whereas the query [ anti-virus 
+-software ] will search for the words 'anti-virus' but exclude references to software. You can exclude 
+as many words as you want by using the - sign in front of all of them, for example [ jaguar -cars 
+-football -os ]. The - sign can be used to exclude more than just words. For example, place a hyphen 
+before the 'site:' operator (without a space) to exclude a specific site from your search results. 
+
+- Fill in the blanks (*)
+The *, or wildcard, is a little-known feature that can be very powerful. If you include * within a query, 
+it tells Google to try to treat the star as a placeholder for any unknown term(s) and then find the best 
+matches. For example, the search [ Google * ] will give you results about many of Google's products (go 
+to next page and next page -- we have many products). The query [ Obama voted * on the * bill ] will give 
+you stories about different votes on different bills. Note that the * operator works only on whole words, 
+not parts of words. 
+
+- Search exactly as is (+)
+Google employs synonyms automatically, so that it finds pages that mention, for example, 
+childcare for the query [ child care ] (with a space), or California history for the query 
+[ ca history ]. But sometimes Google helps out a little too much and gives you a synonym when you 
+don't really want it. By attaching a + immediately before a word (remember, don't add a space after 
+the +), you are telling Google to match that word precisely as you typed it. Putting double quotes 
+around a single word will do the same thing. 
+
+- The OR operator
+Google's default behavior is to consider all the words in a search. If you want to specifically allow 
+either one of several words, you can use the OR operator (note that you have to type 'OR' in ALL CAPS). 
+For example, [ San Francisco Giants 2004 OR 2005 ] will give you results about either one of these years, 
+whereas [ San Francisco Giants 2004 2005 ] (without the OR) will show pages that include both years on the
+same page. The symbol | can be substituted for OR. (The AND operator, by the way, is the default, so it 
+is not needed.) 
+
+
+==================================================================================================
+********************************** MS SUITE Notes ******************************************
+==================================================================================================
+
+------------------------------------------
+Microsoft Word 2003 Miscellaneous
+Stop Requiring CTRL - Click
+------------------------------------------
+Summary: Visit hyperlinks in Microsoft Word 2003 
+without holding down the CTRL key.
+
+- Whenever you want to visit a hyperlink using Microsoft Word 2003, you cannot just click on the 
+  hyperlink. Instead, you must hold down the CTRL key while clicking the hyperlink. This is for your 
+  protection. Microsoft Word 2003 keeps you from accidentally visiting web sites that you don't want 
+  to visit linked in documents, plus it keeps you from editing a document and accidentally jumping 
+  around to a different section.However, you may want to disable this setting so just clicking on a 
+  hyperlink views its destination without requiring the CTRL key.
+
+1. Select "Tools" then "Options". 
+2. When the multi-tabbed dialog-box "Options" appears, click the "Edit" tab. 
+3. Uncheck "Use CTRL + Click to follow hyperlink". 
+4. Press "OK" to close the dialog box.
+
+
+******************************************* MS Excel Functions *************************************
+http://www.techonthenet.com/excel/formulas/
+
+--------------------------------------------------------------------------------------------------------
+The CONCATENATE function allows to combine multiple text together such as queries for different data.
+--------------------------------------------------------------------------------------------------------
+=CONCATENATE("INSERT INTO MANUAL_DATA_1844_TABLE(ssn, fname, mname, lname, suffix, accession_id, box_num)
+ VALUES('",J2,"','",B2,"','",C2,"','",A2,"','",D2,"','",F2,"','",K2,"');")
+=CONCATENATE("SELECT table_name, column_name FROM all_tab_columns WHERE table_name LIKE'%", A2, "%' ORDER BY table_name, column_name;")
+=CONCATENATE(SUBSTITUTE(B224,"_"," "))
+=CONCATENATE("COMMENT ON COLUMN ", TRIM(A266), ".", B266, " IS '", TRIM(D266), "';")
+
+SELECT table_name, column_name FROM all_tab_columns WHERE column_name LIKE'%D%'AND OWNER='MMLD' ORDER BY table_name, column_name;
+SELECT table_name, column_name FROM all_tab_columns WHERE column_name='QUAL_CODE'AND OWNER='MMLD' ORDER BY table_name, column_name;
+=CONCATENATE(TRIM(SUBSTITUTE(B83,"_", " ")), " FIELD FOR ", A83)
+
+=CONCATENATE("COMMENT ON COLUMN ", A4, ".", B4, " IS '", D4, "';")
+
+=CONCATENATE("insert_accession( ", F6,",", A6,"),";")
+
+----------------------------------------------------------------------
+To replace the non breaking space with a white space char:
+----------------------------------------------------------------------
+=CONCATENATE("insert_accession(",TRIM(SUBSTITUTE(F6, CHAR(160),CHAR(32))),",", TRIM(SUBSTITUTE(A6, CHAR(160),CHAR(32))),")",";")
+
+=LEFT(TRIM(REPLACE(N7,1,24,"")), FIND(",", TRIM(REPLACE(N7,1,24,"")))-1)
+
+=REPLACE(MID(LEFT(N7, FIND("added", N7) - 2), FIND("first name",LEFT(N7, FIND("added", N7) - 2)),100),1,11,"")
+
+=IF(AND(TRIM(B7)=TRIM(K7),TRIM(D7)=TRIM(L7)),".","NO")
+
+Excel: Macro: Insert Row
+================================================================================
+The following is the macro to insert rows between each query in an Excel spreadsheet.  I have not had time to go analyze the macro yet.
+
+Then I used the following formula to place "GO" in those blank lines.
+=IF( A1 <> "", A1, "GO" )
+
+================================================================================
+
+Sub insertRow()
+' http://www.mrexcel.com/forum/showthread.php?t=48712
+' Insert a row between every row.
+
+Application.ScreenUpdating = True
+Dim count As Integer
+Dim x As Integer
+
+For count = 1 To 23
+  If ActiveCell.Value <> "" Then
+    ActiveCell.Offset(1, 0).Select
+    Range(ActiveCell, ActiveCell.Offset(0, 0)).EntireRow.Insert
+    ActiveCell.Offset(1, 0).Select
+
+    For x = 1 To 1
+    Next x
+    Else
+      ActiveCell.Offset(1, 0).Range("a1").Select
+  End If
+Next count
+
+
+********************************** MS Word / Outlook Notes ******************************************
+Fix Your Broken Outlook Personal Folders (PST) File:
+http://www.howtogeek.com/howto/microsoft-office/fix-your-broken-outlook-personal-folders-pst-file/
+
+1 Open up an explorer window, and then paste in the following into the address bar:
+Find PST file in: %appdata%\Microsoft\Outlook or C:\Users\CMJackson1\AppData\Roaming\Microsoft\Outlook
+
+2 Look for program called: SCANPST.exe
+
+--------------------------
+Folders for Outlook 2007:
+--------------------------
+C:\Program Files\Microsoft Office\Office12
+
+------------------------------------
+Folders for Outlook 2003 and earlier:
+------------------------------------
+C:\Program Files\Common Files\System\Mapi\1033
+                   OR
+C:\Program Files\Common Files\System\MSMAPI\1033
+
+********************************** IIS	(Internet Information Server) ******************************************
+
+To Setup / Enable IIS:
+	1) Click Start
+	2) Click Control Panel
+	3) Click Programs
+	4) Under Programs and Features click "Turn Windows features on or off"
+	5) Expand Internet Information Services
+	6) Expand Web Management Tools 
+	7) Check IIS Management Console
+	8) Check IIS Management Service
+	9) Expand IIS 6 Management Compatibility
+	10) Check IIS Metabase and IIS 6 configuration compatibility	
+	11) Expand World Wide Web Services
+	12) Expand Application Development Features
+	13) Check .NET Extensibility
+	14) Check ASP.NET
+	15) Check ISAPI Extensions
+	16) Check ISAPI Filters
+	17) Expand Common HTTP Features
+	18) Check Default Document
+	19) Check Static Content
+	20) Expand Security 
+	21) Check Request Filtering
+	22) Check Windows Authentication
+	
+	
+To Setup Windows Authentication:
+	1) Click Start
+	2) Click Control Panel
+	3) Click Programs
+	4) Under Programs and Features click "Turn Windows features on or off"
+	5) Expand Internet Information Services
+	6) Expand World Wide Web Services
+	7) Expand Security
+	7) Check Windows Authentication
+	
+To check IIS App pool:
+	1) In Computer Management, expand Services and Applications.
+	2) Click on IIS Manager.
+	3) Expand the selected IIS. (ie: APUS07196)
+	4) Click on Application Pools.
+
+To create a new IIS App pool:
+	1) In Computer Management, expand Services and Applications.
+	2) Click on IIS Manager.
+	3) Expand the selected IIS (ie: APUS07196)
+	4) Click on Application Pools.
+	5) Right click in white space in Application Pools and click Add Application Pool.
+	6) Enter Name.(ie: domain40)
+	7) Click OK.
+	8) Right click on newly created App Pool and select Advanced Settings.
+	9) Under Process Model, click on Identity ...
+	10) Change to Custom account.
+	11) Click Set
+	12) Enter Windows credentials
+
+To run aspnet_regiis from the latest .Net framework library:
+	
+	C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe /i
+
+
+Updating Windows Authentication Password:	
+	1) In Computer Management, expand Services and Applications.
+	2) Click on IIS Manager.
+	3) Expand the selected IIS (ie: APUS07196)
+	4) Select and expand Sites.
+	5) Expand Default Web Site.
+	6) Select a site that needs updated password.
+	7) Double click Authentication.
+	8) Right click Anonymous Authentication.
+	9) Select Edit.
+	10) Click Set.
+	11) Enter User name (ie: AMUNET\CJackson), Password, and Confirm password.
+	12) Click OK.
+
+********************************** Visual Studio ******************************************
+
+Disable debug console:
+	Browswer link dashboard
+
+Creating a virtual directory in Visual Studio:	
+	1) Right click on Solution.
+	2) Select Properties.
+	
+For Debugging to attach a process:
+	If you press CTRL + ALT + P look for w3wp.exe to attach	
+
+Adding TFS repo:
+	1) Click on Team Explorer tab (on the right panel)
+	2) Under Connect, click Select Team Projects.
+	3) Click Servers.
+	4) Click Add. 
+	5) Enter the name of URL. (ie: sttfsapp1)
+	6) Click OK.
+	7) Click Close.
+	8) Check Sakai.
+	
+Adding TFS Task Query(for PBI):
+	1) Click on Team Explorer tab (on the right panel)	
+	2) Select Work Items.
+	3) Expand Queries.
+	4) Right click on My Queries and click New Query.
+
+How to find Shelved code in Visual Studio:
+	1) Click on Team Explorer tab.	
+	2) Click on Pending Changes.
+	3) Click on Actions dropdown.	
+	4) Select Find Shelvesets.
+	5) Enter the name or user who shelved the code.	
+	
+
+How to create a ZIP project deployable in Visual Studio:
+- Note 1: Make sure the filepath in Logger.config reflects the Site name of the project.
+- Note 2: Whenever there are any connection string changes, it needs to be updated in the Profile when publishing a project.
+
+	1) Click on Solution Explorer tab.	
+	2) Right click on specific project. (ie: eSyllabusApi)
+	3) Click Publish.	
+	4) On Profile, "Custom" in the Select a publish target section	
+	5) Type in profile name. (ie: EsyllabusApi_DEV)
+	6) Select "Web Deploy Package" in Publish method dropdown.
+	7) In Package location, navigate to the desired location for the zip file (ie: C:\SakaiRepo\DotNetProjs\eSyllabus\Main)
+	8) In Site name enter the name of the project. (ie: eSyllabusApi)
+	9) Click Next.
+	10) Under the remote connection string select the correct config (ie: esyllabusDB)
+	11) Click Next.
+	12) Click Publish.
+
+Deploying published ZIP on a remote IIS server:
+	1) Remote desktop into target IIS server. (ie: get permission access from Russell)
+	2) Copy and paste project ZIP file from local \Main into the desktop of the IIS server.
+	3) Open Server Manager.
+	4) Expand Roles > Web Server(IIS) > Internet Information Services(IIS) Manager
+	5) In the center section, expand DEVESYLWEB1 > Sites > Default Web Site
+	6) Right click on Default Web Site and select Deploy > Import Application
+	7) Browse to the desktop for the project ZIP file.
+	8) Click Next
+	9) Click Next
+	10) Click Next
+	11) Select "No, just append the files in the application package to the destination" (Might be different in TEST envr)
+	12) Click Next
+
+	
+=======================
+MS SQL Server Manager	
+=======================		
+Creating a new login (when Windows Auth isn't being used):
+	1) Expand DB Schema(ie: DEVESYLSQL1)	
+	2) Expand Security
+	3) Right click on Logins	
+	4) Select New Login
+	5) Select SQL Server authentication
+	6) Enter the new name of login user.(ie: EsylAppUser)
+	7) Enter the new password of login user.(ie: EsylusrPwD!#)
+	8) Click OK	
+
+=======================
+LINQPad 4
+=======================
+- To add a new DB connection via DLL:
+	1) On left section, click Add connection link.
+	2) Click on "Use a typed data context from your own assembly"
+	3) Select Entity Framework (DbContext) [for EntityFramework 5]
+	4) Click Next.
+	5) Browse to the location of the Custom Assembly (\bin\Debug directory of project)
+	6) Select Custom Type name.
+	7) Click OK
+	
+Thank you for purchasing a LINQPad autocompletion license!
+You unique activation code is: LCFZ7-VWHXC
+Licensee Name: American Public University System Product Purchased:
+LINQPad Premium Educational License
+
+
+=======================
+Miscellaneous commands 
+and steps
+=======================	
+
+Processes to Kill:
+reportingservicesservice.exe
+perfwatson2.exe
+
+To fix Firefox Flash crashing issue, enter following parameter:
+	C:\Windows\SysWOW64\Macromed\Flash\mms.cfg
+		ProtectedMode=0
+
+To launch Computer management:
+	- In command prompt type: compmgmt.msc
+
+To take screenshot of specific window
+	- Alt + PrtScn
+
+-----------------------------------------------------------
+How to find carriage returns in Notepad++:
+-----------------------------------------------------------  
+	Find what: [\r\n]+
+
+- Select the Regular expression option in the Search Mode section.
+
+
+-----------------------------------------------------------
+Permanently enable 'Open command window here' in Windows 7
+-----------------------------------------------------------
+
+1) Press Windows button + R (Run)
+
+2) Type Regedit
+
+3) Navigate to the following location:
+
+        HKEY_CLASSES_ROOT\Directory\shell\cmd
+
+4) In the right-pane, delete the REG_SZ value named Extended
+	
+==========================
+CMD Prompt:
+==========================
+------------------------------------------
+Spool console results into external file:
+------------------------------------------
+echo %PATH% > outputResults.txt
+
+
+To break out an infinite loop type:
+Ctrl + c + Enter 
+
+	or 
+
+Ctrl + c
+
+	or 
+
+Ctrl + Break
+
+
+-------------------------------------
+SetX in CLI(to permanently assign
+system variable w/o GUI):
+-------------------------------------
+set JAVA_HOME=C:\public\JDK_1.6.0.20
+echo %JAVA_HOME%
+
+echo %JAVA_HOME%							
+setx JAVA_HOME "%JAVA_HOME%"
+echo %JAVA_HOME%
+
+
+************************************ TextPad Notes ********************************
+http://www.notesbit.com/index.php/web-mysql/software-review/textpad-best-text-editor-for-regex-operations-customizable-color-coding/
+
+- In order to uppercase all letters, hit ctrl + u
+- In order to lowercase all letters, hit ctrl + l
+- Location to installing SYN files: \TextPad5\Samples & \TextPad5\system
+- Configure > Preferences > General: Uncheck multiple instances to run 
+- In order to remove white spaces or resolve any spacing issues:
+   * Configure > Preferences
+   * Expand Document Classes and PL/SQL
+   * Highlight Tabluation
+   * Check "Convert new tabs to spaces" and "Convert existing tabs to spaces when saving files"
+- F5 and check Regular Expression: 
+   * "\n" for carriage return
+   * "\t" for tab
+
+---------------------------------
+Textpad: For Setting Up Macros:
+---------------------------------
+!Don't touch mouse in macros mode!
+1) Start by entering desired keys
+2) End + , + Return + Delete + Backspace
+3) Set up a delimeter such as || 'l' || to separate data you want separated in Excel.
+
+************************************ NotePad++ Notes ********************************
+http://www.keyxl.com/aaacd5a/43/Notepad-Plus-text-editor-software-keyboard-shortcuts.htm
+
+- In order to uppercase all letters, hit ctrl + shift + u
+- In order to lowercase all letters, hit ctrl + u
+
+
+	        ===================================================
+            Running The Apache Tomcat 6.0 Servlet/JSP Container
+            ===================================================
+
+----------------------------
+(1) Setting up Tomcat paths
+----------------------------
+set CATALINA_HOME=C:\public\Miscellaneous\Applications_and_SDKs\apache-tomcat-6.0.29
+set CATALINA_HOME=C:\public\Miscellaneous\Applications_and_SDKs\apache-tomcat-6.0.16
+echo %CATALINA_HOME%
+
+#set CATALINA_BASE=C:\public\Miscellaneous\Applications_and_SDKs\apache-tomcat-6.0.29\webapps
+echo %CATALINA_BASE%
+
+set JAVA_HOME=C:\Program Files\Java\jdk1.6.0_24
+echo %JAVA_HOME%
+
+set JRE_HOME=C:\Program Files\Java\jdk1.6.0_24\jre
+echo %JRE_HOME%
+
+
+-----------------------------------------------------------------
+IMPORTANT: Make sure new path entry comes before everything else
+**Error: Exception in thread "main" java.lang.UnsupportedClassVersionError **
+-----------------------------------------------------------------
+set CLASSPATH=%JAVA_HOME%;%JAVA_HOME%\bin;%CLASSPATH%
+echo %CLASSPATH%
+
+set PATH=%JAVA_HOME%;%JAVA_HOME%\bin; %PATH%
+echo %PATH%
+
+
+----------------------------
+(1) Start Up Tomcat
+----------------------------
+http://oreilly.com/java/archive/tomcat-tips.html
+(1.1) Tomcat can be started by executing the following commands:
+
+      %CATALINA_HOME%\bin\startup.bat         (Windows)
+
+      $CATALINA_HOME/bin/startup.sh           (Unix)
+
+(1.2) After startup, the default web applications included with Tomcat will be
+      available by visiting:
+
+      old http://localhost:8080/
+      new http://localhost:1983/
+
+      
+----------------------------
+(2) Shut Down Tomcat
+----------------------------
+(2.1) Tomcat can be shut down by executing the following command:
+
+      %CATALINA_HOME%\bin\shutdown           (Windows)
+
+      $CATALINA_HOME/bin/shutdown.sh         (Unix)      
+      
+
+----------------------------
+Running PHP 
+----------------------------
+* Copy your Java libraries, PHP executables or PHP libraries in
+  "JavaBridge.war" or JavaBridgeTemplate.war and rename it to
+  "myPhpApp.war" or similar.
+
+* Copy your web application myPhpApp.war to the autodeploy folder of
+  your JEE server or servlet engine. If you don't have a myPhpApp.war
+  yet, simply rename "JavaBridge.war" to "myPhpApp.war".
+
+  Example for Tomcat on Unix:
+  
+    cp myPhpApp.war $CATALINA_HOME/webapps/
+
+  Example for Apache Geronimo on Windows:
+
+    copy myPhpApp.war "\Program Files\IBM\WebSphereCommunityEdition\deploy"
+
+  Wait until the "myPhpApp" directory appears (restart your JEE
+  server, if necessary).
+  
+* If you want to run PHP as a sub component of the JEE server or
+  servlet engine, visit http://localhost:8080/myPhpApp and click on
+  test.php. 
+
+
+ 	    ===================================================
+            		Running Apache Axis2 Container
+            ===================================================
+
+----------------------------------------------------
+Setting Paths for Web services using Apache Axis2
+----------------------------------------------------
+set ANT_HOME=C:\public\Miscellaneous\Applications_and_SDKs\apache-ant-1.8.2\
+set PATH=%PATH%; %ANT_HOME%
+echo %ANT_HOME%
+echo %PATH%
+
+set JAVA_HOME=C:\Program Files\Java\jdk1.6.0_24
+echo %JAVA_HOME%
+
+set AXIS2_HOME=C:\public\Miscellaneous\Applications_and_SDKs\JavaLibraries\Axis2
+echo %AXIS2_HOME%
+
+set CLASSPATH=%CLASSPATH%;%AXIS2_HOME%\lib;%AXIS2_HOME%\samples\jaxws-calculator\target
+echo %CLASSPATH%
+
+-----------------------------------------------------------
+Converting WSDL to JAVA for Server via command line in M$ 
+[Make sure you're in the directory of the WSDL]
+-----------------------------------------------------------
+%AXIS2_HOME%\bin\WSDL2Java -uri StockQuoteService.wsdl -d adb -s -ss -sd -ssi -o service
+
+
+---------------------------------------------------------------
+Creating AAR [Archived Web Service like a WAR or EAR] with ANT
+---------------------------------------------------------------
+%ANT_HOME%\bin\ant
+
+dir %ANT_HOME%      
+
+
+Starting the Axis 2 web server [Stop server by pressing Ctrl + c]
+====================================================================
+%AXIS2_HOME%\bin\axis2server
+
+
+	===================================================
+			Apache Maven
+	===================================================
+	 
+ Installing Maven
+ -----------------
+     * Downloaded/Installed Apache Maven:
+
+        
+        set MAVEN2_HOME=C:\SakaiDevTools\apache-maven-3.0.5\
+        setx MAVEN2_HOME "C:\SakaiDevTools\apache-maven-3.0.5\"
+        setx MAVEN2_HOME "C:\SakaiDevTools\apache-maven-2.2.1\"
+        
+        set PATH=%PATH%;%MAVEN2_HOME%\bin
+        setx PATH "%PATH%;%MAVEN2_HOME%\bin"
+        
+        set MAVEN_OPTS='-Xms128m -Xmx796m -XX:PermSize=64m -XX:MaxPermSize=172m -XX:+AggressiveOpts'
+        
+        To verify Maven install:
+        
+            mvn --version
+            
+        C:\Users\cjackson\.m2
+  
+-  Add the bin directory to your PATH, eg:
+
+    Windows 2000/XP
+		set PATH="C:\public\Miscellaneous\Applications_and_SDKs\apache-maven-2.2.1\bin";%PATH%
+		set PATH="C:\public\Miscellaneous\Applications_and_SDKs\apache-maven-3.0.3\bin";%PATH%
+
+-  Make sure JAVA_HOME is set to the location of your JDK
+
+
+	mvn install:install-file -DgroupId=org.apache.axis2 -DartifactId=axis2-jaxws -Dversion=1.5.2-SNAPSHOT -Dpackaging=jar -Dfile=C:\public\Miscellaneous\Applications_and_SDKs\JavaLibraries\Axis2\lib
+
+
+	===================================================
+			      JRuby
+	===================================================
+
+Download/Install JRuby:
+--------------------------
+1.) Download the latest JRuby distribution:
+	http://jruby.org/download
+2.) Extract JRuby into a directory or install the executable
+3.) Open Windows command prompt
+4.) Include JRuby's bin subdirectory into the PATH environment variable:   
+	set JRUBY_HOME=C:\public\jruby-1.5.1
+	set CLASSPATH=C:\public\jruby-1.5.1\bin 
+5.) Install the executable into a writable directory.	
+6.) Open up run command.
+7.) Type jruby -v [To check if JRuby correctly installed showing current version]
+
+
+Commands:
+============================
+//Executes the helloRuby script specified in PATH location
+//OSCMS-FS-04/Users4/CMJackson1/Home/Coding/Manuals_and_Docs/Ruby/helloRuby.rb
+\\OSCMS-FS-04\Users4\CMJackson1\Home\Coding\Manuals_and_Docs\Ruby\rubyFileManipulator.rb
+\\OSCMS-FS-04\Users4\CMJackson1\Home\Coding\Manuals_and_Docs\Ruby\rubyCallingJava.rb
+
+jruby --debug -S C:/public/jruby-1.5.1/samples/helloRuby.rb
+jruby -S //OSCMS-FS-04/Users4/CMJackson1/Home/Coding/Manuals_and_Docs/Ruby/oracle-test1.rb
+jruby -S //OSCMS-FS-04/Users4/CMJackson1/Home/Coding/Manuals_and_Docs/Ruby/helloRuby.rb
+
+	===================================================
+			GlassFish Server 3.1 
+	===================================================
+
+GlassFish Quick Start Guides 
+http://glassfish.java.net/downloads/quickstart/v3-preview2.html
+
+-----------------------
+Configuring JDK Path
+-----------------------
+Fixing Glassfish JDK Path Issue:
+http://www.devdaily.com/blog/post/java/fixing-glassfish-jdk-path-problem-solved
+
+Navigate to:
+C:\glassfish\config\asenv.bat
+
+Add the following entry into asenv.bat:
+set AS_JAVA=C:\public\JDK_1.6.0.20
+
+Add the Glassfish into environment variable:
+set GLASSFISH=C:\public\Glassfish3
+echo %GLASSFISH%
+
+------------------------------------------------
+Starting and Stopping the Default Domain
+------------------------------------------------
+When you install GlassFish Server, a default domain named "domain1" is created. 
+
+=============================
+To Start the Default Domain
+=============================
+Run the "asadmin start-domain" command without an operand:
+[The command starts the default domain, domain1.]
+
+ 	%GLASSFISH%\glassfish\bin\asadmin start-domain nameOfDomain
+ 	 
+ 
+[ie:as-install == C:\public\Miscellaneous\Applications_and_SDKs\glassfish-3.1\glassfish3\bin]
+
+=============================
+To Stop the Default Domain
+=============================
+Run the asadmin stop-domain command without an operand:
+[The command stops the default domain, domain1.]
+
+	%GLASSFISH%\glassfish\bin\asadmin stop-domain
+
+To determine whether a domain is running, use the asadmin list-domains command:
+
+	as-install/bin/asadmin list-domains
+
+------------------------------------------------
+Starting and Stopping the Database(Derby) Server
+------------------------------------------------
+- A database server is not started by default when you start the GlassFish Server domain. 
+
+To Start the Java(Derby) DB Server
+Run the asadmin start-database command
+---------------------------------------
+
+	%GLASSFISH%\glassfish3\bin\asadmin start-database 
+
+For example, to start the Java DB server from its default location:
+
+	%GLASSFISH%\glassfish3\bin\asadmin --dbhome C:\public\Miscellaneous\Applications_and_SDKs\glassfish-3.1\glassfish3\javadb
+
+To Stop the Java(Derby) DB Server
+Run the asadmin stop-database command:
+---------------------------------------
+
+	%GLASSFISH%\glassfish3\bin\asadmin stop-database	
+
+Create a new test table:
+---------------------------------------
+
+CREATE TABLE "COLLEAGUES" (
+    "ID" INTEGER not null primary key,
+    "FIRSTNAME" VARCHAR(30),
+    "LASTNAME" VARCHAR(30),
+    "TITLE" VARCHAR(10),
+    "DEPARTMENT" VARCHAR(20),
+    "EMAIL" VARCHAR(60)
+);
+
+
+======================================
+To Start the Glassfish Admin  Console
+======================================	
+Type the URL in your browser.	
+http://localhost:4848	
+
+======================================
+To Deploy Sample Application From 
+the Command Line for Glassfish
+======================================
+Before You Begin
+- At least one GlassFish Server domain must be started before you deploy the sample application.
+
+Run the asadmin deploy command
+---------------------------------------
+The general form for the command is as follows:
+
+	%GLASSFISH%\glassfish3\bin\asadmin deploy war-name
+
+To deploy the hello.war sample, the command is as follows:
+
+	%GLASSFISH%\glassfish3\bin\asadmin deploy \public\Miscellaneous\Applications_and_SDKs\glassfish-3.1\glassfish3\glassfish\domains\domain1\applications\hello.war
+
+Access the hello application by typing the following URL in your browser:
+http://localhost:8080/hello
+
+======================================
+To Undeploy the Sample Application 
+From the Command Line for Glassfish
+======================================
+
+Run the asadmin undeploy command.
+---------------------------------------
+
+The general form for the command is as follows:
+
+	%GLASSFISH%\glassfish3\bin\asadmin undeploy war-name
+
+- For war-name, use the literal hello, not the full hello.war name.
+
+For the hello.war example, the command is as follows:
+
+	%GLASSFISH%\glassfish3\bin\asadmin undeploy hello
+	
+-----------------------------------------
+Enabling CGI support in GlassFish:
+-----------------------------------------
+http://www.java.net/external?url=http://jfarcand.wordpress.com/2006/04/06/enabling-cgi-support-in-glassfish/
+http://blogs.sun.com/swchan/entry/common_gateway_interface_in_glassfish
+
+- Two ways to enable it: only inside your web application or for all web applications deployed in GlassFish. 
+I strongly recommend you enable it inside your application only for security reason, but if you control 
+the applications deployed in GlassFish, then enabling it to all web applications might be simpler. 
+
+- For your web application, you will add the information in your WEB-INF/web.xml. 
+
+- To enable it globally, you will add it in $glassfish.home/domains/domain1/config/default-web.xml.
+
+C:\public\Miscellaneous\Applications_and_SDKs\glassfish-3.1\glassfish3\glassfish\domains\domain1\config\default-web.xml
+
+
+WEB-INF location:
+------------------
+C:\public\Miscellaneous\Applications_and_SDKs\glassfish-3.1\glassfish3\glassfish\lib\install\applications\__admingui\WEB-INF
+
+
+	    ===================================================
+            		Building/Compiling GCC
+            ===================================================
+
+Classpath setup:
+-------------------
+set CLASSPATH=%CLASSPATH%;C:\public\TechTrain\make
+echo %CLASSPATH%
+
+set PATH=%PATH%;C:\public\TechTrain\make
+echo %PATH%
+
+set CLASSPATH=%CLASSPATH%;C:\public\TechTrain\gcc-4.6.2
+echo %CLASSPATH%
+
+set PATH=%PATH%;C:\public\TechTrain\gcc-4.6.2
+echo %PATH%
+
+
+set CLASSPATH=%CLASSPATH%;C:\public\TechTrain\MinGW\bin
+echo %CLASSPATH%
+
+set PATH=%PATH%;C:\public\TechTrain\MinGW\bin
+echo %PATH%
+
+
+set CLASSPATH=%CLASSPATH%;C:\public\TechTrain\MinGW\msys\1.0\bin
+echo %CLASSPATH%
+
+set PATH=%PATH%;C:\public\TechTrain\MinGW\msys\1.0\bin
+echo %PATH%
+
+To CONFIGURE:
+-------------------------------------
+- Type sh to get into console
+
+
+				    ===================================================
+							Using Grep (Windows)
+				    ===================================================
+Linux and Unix grep command          
+http://www.computerhope.com/unix/ugrep.htm
+
+15 Practical Grep Command Examples In Linux / UNIX
+http://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
+
+set CLASSPATH=%CLASSPATH%;C:\public\TechTrain\grep
+echo %CLASSPATH%
+
+set PATH=%PATH%;C:\public\TechTrain\grep
+echo %PATH%
+
+grep -H "chan" *.txt
+
+
+
+
+				    ===================================================
+							Using ANT
+				    ===================================================
+            
+Apache Ant - 1.8.2 Manual          
+http://ant.apache.org/manual/index.html  
+
+Tutorial: Hello World with Apache Ant
+http://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html
+
+SQL ANT Tasks
+http://ant.apache.org/manual/Tasks/sql.html
+
+ANT sql task: How to run SQL and PL/SQL and notice execution failure?
+http://stackoverflow.com/questions/3363356/ant-sql-task-how-to-run-sql-and-pl-sql-and-notice-execution-failure
+							-------------
+							CONFIGURATION
+							-------------	
+Setting up system/class variables
+-------------------------------------
+- Do not ever set CLASSPATH. Ant does not need it, it only causes confusion and breaks things. 
+
+echo %ANT_HOME%
+set ANT_HOME=C:\public\TechTrain\apache-ant-1.8.2
+echo %ANT_HOME%
+
+echo %PATH%
+set PATH=%PATH%;%ANT_HOME%\bin
+echo %PATH%
+
+							-----------------
+							PREPARATION TEST
+							-----------------
+
+Compile/Run Java Class
+-------------------------------------
+javac -sourcepath src -d C:\public\AntTest\build\classes C:\public\AntTest\src\oata\HelloWorld.java
+java -cp C:\public\AntTest\build\classes oata.HelloWorld
+
+Create Manifest for JAR
+[NOTE: Be in the directory of compiled
+class]
+-------------------------------------
+echo Main-Class: oata.HelloWorld>myManifest
+
+
+Create JAR
+-------------------------------------
+jar -cfm C:\public\AntTest\build\jar\HelloWorld.jar myManifest -C C:\public\AntTest\build\classes .
+
+
+Running the JAR
+-------------------------------------
+java -jar C:\public\AntTest\build\jar\HelloWorld.jar
+
+
+							---------------
+							ASSEMBLY/DEPLOY
+							---------------
+
+Build.xml file
+-------------------------------------
+- Make sure it is at the base level of
+the project file.
+
+<project>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes"/>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/HelloWorld.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="oata.HelloWorld"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="build/jar/HelloWorld.jar" fork="true"/>
+    </target>
+
+</project>
+
+
+							---------------
+							RUNTIME
+							---------------	
+Running the commands defined 
+in the build file
+-------------------------------------
+ant compile jar run
+
+				    ===================================================
+							Using wget
+				    ===================================================           
+C:\public\TechTrain\wget-1.11.4-1-bin      
+
+Wget for Windows
+http://gnuwin32.sourceforge.net/packages/wget.htm
+
+Wget Types of Files
+http://www.gnu.org/software/wget/manual/wget.html#Types-of-Files
+
+Linux / Unix Command: wget
+http://linux.about.com/od/commands/l/blcmdl1_wget.htm
+
+
+
+wget -r -l2 -P/tmp http://cs.uccs.edu/~cs301/javaeetutorial5/examples/jms/
+wget -r -l5 -PC:/public/TechTrain/wget-1.11.4-1-bin/tmp http://cs.uccs.edu/~cs301/javaeetutorial5/examples/jms/
+
+wget -r -A xml,properties,mf,java -PC:/public/TechTrain/wget-1.11.4-1-bin/tmp http://cs.uccs.edu/~cs301/javaeetutorial5/examples/jms/
+
+wget -r -l5 -PC:/public/TechTrain/wget-1.11.4-1-bin/tmp http://cs.uccs.edu/~cs301/javaeetutorial5/examples/jms/advanced/
+
+
+				    ===================================================
+							Using Eclipse
+				    =================================================== 
+
+---------------------------------------
+Eclipse Hot keys
+---------------------------------------
+Ctrl + Shift + F = Format the code
+
+Ctrl + D = Delete line
+
+Ctrl + Shift + O = To import libraries and cleanup unused libraries
+
+Shift + Alt + J = To generate JavaDoc
+
+- run the ora_developer_seeddb_incl_vessels_posreps_ports_polygons to repopulate/recreate DB
+- comment/uncomment contextInitialized method from lrit_wi/src/mil/uscg/lrit/wi/context/ContextListener.java
+- Press F4 to go directly to the class of an associated method. (ie: interface method going to actual method)
+- Whenever you need to run JUnit for the first time, need to run buildconf ant script in the targeted project *** 
+
+
+				    ===================================================
+							Using JAVA
+				    =================================================== 
+
+====================================================
+Compiling Java class(es) with specified libraries
+====================================================
+javac -extdirs C:\public\Glassfish3\jmsLibraries -d C:\public\Glassfish3\WEB-INF\classes MessageSender.java
+javac -classpath Y:\JarDeployments_MyEclipse\J2EE_CORE\1.5\javaee.jar MessageSender.java
+
+====================================================
+Creating JAR 
+====================================================
+jar cvf jmsptpproducer.jar MessageSender.class
+
+====================================================
+Creating JAR with custom MANIFEST file
+====================================================
+jar cvm jmsptpproducer.jar META-INF\myManifest.mf MessageSender.class
+jar -cvfm jmsptpproducer.jar myManifest.txt MessageSender.class
+
+====================================================
+Permanently set SYSTEM PATH variable
+====================================================
+echo %JAVA_HOME%
+set JAVA_HOME=C:\public\JDK_1.6.0.20
+echo %JAVA_HOME%
+
+echo %JAVA_HOME%							
+setx JAVA_HOME "%JAVA_HOME%"
+echo %JAVA_HOME%
+
+
+
+set PATH=%ORACLE_HOME%; %PATH%
+echo %PATH%
+
+SETX PATH "%ORACLE_HOME%;%PATH%"
+SETX PATH "%PATH%;%ORACLE_HOME%"
+
+==================================================================================================================================
+							MS-DOS Commands:
+==================================================================================================================================
+
+---------------------------------------------------------
+MSDos grep equivalent
+---------------------------------------------------------
+dir \/s | find ".java" |more
+dir \/s | find ".java" > java_list.txt
+
+dir | find ""
+
+dir c:\public > c:\public\dosExampleOutputFile.txt
+
+---------------------------------------------------------
+Display all sorted files, folders, and subfolders in DOS
+by group directories and file names
+---------------------------------------------------------
+		
+dir /b /s | sort 
+dir /b /s | sort > folderResults.txt
+
+---------------------------------------------------------
+Display windows processes
+---------------------------------------------------------
+
+tasklist /fi "Imagename eq nameOfProcess.exe"
+
+
+				    ===================================================
+						   Decompiling .CHM file
+				    =================================================== 
+
+-------------------------------------------
+decompiling chm file: hh.exe requires 
+only the filename. no full path is allowed
+-------------------------------------------
+hh -decompile extracted c:/MyDir/MyFile.chm
+
+
+hh -decompile KofaxTransformationModulesScriptingHelp C:\public\KofaxApiGuide\KofaxTransformationModulesScriptingHelp.chm
+
+hh -decompile ScriptingObjectsReference C:\public\KofaxApiGuide\ScriptingObjectsReference.chm
+
+
+---------------------------------------------------------
+Creating a CAB file
+---------------------------------------------------------
+- Make sure that all files that need to be in cab are in the same directory of the .ddf file.
+
+The syntax to create a CAB file using the DDF file is:
+C:\Windows\System32\makecab /f ExportTestSetting.ddf
+C:\Windows\System32\makecab /f ExportTestCab.ddf
+
+makecab /f C:\public\CAB-Testing\STCW_Pilot_719K_KEExport\ExportTestSetting.ddf
+
+---------------------------------------------------------
+Extracting the contents of a CAB file is as easy as running:
+---------------------------------------------------------
+C:\Windows\System32\expand /E example.cab
+
+mkdir C:\public\CAB-Testing\STCW_Pilot_719K_KEExport 
+expand C:\public\CAB-Testing\STCW_Pilot_719K_KEExport.cab -F:* C:\public\CAB-Testing\STCW_Pilot_719K_KEExport 
+copy C:\public\CAB-Testing\STCW_Pilot_719K_KEExport\admin.xml C:\public\CAB-Testing\STCW_Pilot_719K_KEExport\admin-BACKUP.xml
+
+
+---------------------------------------------------------
+MS SQL Server Queries:
+---------------------------------------------------------
+- List all tables on DB schema:
+	USE [eSyllabusDB]
+	SELECT name FROM sys.tables

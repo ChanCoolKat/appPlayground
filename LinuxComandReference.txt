@@ -1,0 +1,2217 @@
+
+==================================================================================================================================
+							Linux/Unix Commands:
+==================================================================================================================================
+------------------------------------
+Reference Links
+------------------------------------
+
+Cygwin Mirror Sites for Packages
+http://cygwin.com/mirrors.html
+
+chkconfig
+http://linuxcommand.org/man_pages/chkconfig8.html
+
+7 Linux chkconfig Command Examples : Add, Remove, View, Change Services
+http://www.thegeekstuff.com/2011/06/chkconfig-examples/
+
+15 Practical Grep Command Examples In Linux / UNIX
+http://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
+
+Mommy, I found it!, 15 Practical Linux Find Command Examples
+http://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/
+
+Daddy, I found it!, 15 Awesome Linux Find Command Examples (Part2)
+http://www.thegeekstuff.com/2009/06/15-practical-unix-linux-find-command-examples-part-2/
+
+7 Linux Grep OR, Grep AND, Grep NOT Operator Examples
+http://www.thegeekstuff.com/2011/10/grep-or-and-not-operators/
+
+50 UNIX / Linux Sysadmin Tutorials
+http://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/
+
+50 Most Frequently Used UNIX / Linux Commands (With Examples) 
+http://www.thegeekstuff.com/2010/11/50-linux-commands/
+
+12 Linux Chown Command Examples to Change Owner and Group 
+http://www.thegeekstuff.com/2012/06/chown-examples/
+
+Top 25 Best Linux Performance Monitoring and Debugging Tools 
+http://www.thegeekstuff.com/2011/12/linux-performance-monitoring-tools/
+
+Linux Crontab: 15 Awesome Cron Job Examples 
+http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/
+
+7 Simple and Useful Command-Line Tips
+http://net.tutsplus.com/tutorials/other/7-simple-and-useful-command-line-tips/
+
+Linux Directory Structure (File System Structure) Explained with Examples
+http://www.thegeekstuff.com/2010/09/linux-file-system-structure/
+
+http://www.thegeekstuff.com/2009/03/8-essential-vim-editor-navigation-fundamentals/
+
+
+Shell Script Execution Guidelines for Newbies
+http://www.thegeekstuff.com/2010/01/shell-script-execution-guidelines-for-newbies/
+
+Bash Scripting Introduction Tutorial with 5 Practical Examples
+http://www.thegeekstuff.com/2010/03/introduction-to-bash-scripting/
+
+Bash Shell Functions Tutorial with 6 Practical Examples
+http://www.thegeekstuff.com/2010/04/unix-bash-function-examples/
+
+Vim en:Moving Around
+http://www.swaroopch.org/notes/Vim_en:Moving_Around
+
+** Bash scripting Tutorial **
+http://linuxconfig.org/Bash_scripting_Tutorial
+
+** Bash Programming Tutorial ** 
+http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-2.html
+
+
+===========================================================================
+			    	VIM Commands
+===========================================================================
+Navigation:
+
+	^
+	k
+<h		l>
+	j
+	v
+	
+- The h key is at the left and moves left.
+- The l key is at the right and moves right.
+- The k key looks like a up arrow.
+- The j key looks like a down arrow.
+
+In Normal Mode:
+- Press Esc to enter Normal Mode.
+
+- To start the VIM tutorial enter:
+
+	:help tutor
+	
+	vimtutor	
+- To exit, go esc into Normal Mode and type:
+
+	:q!
+
+- To save and quit, go esc into Normal Mode and type:
+
+	:wq
+
+- To save as a certain filename:
+
+	:w fileName
+
+- To insert text type:
+	
+	i
+	
+- To insert below a line of text type:
+
+	o
+
+- To insert above a line of text type:
+
+	O
+	
+- To append text at end of line type:
+
+	A
+
+- To append text at end of a character type:
+
+	a
+	
+- To copy and paste type:
+
+	y - In visual mode, yank highlighted text.
+	yw- yanks one word.
+	p - paste yanked text.
+
+- To delete a word type:
+
+	dw
+	
+- To delete to the end of the line;
+
+	d$
+
+- Deletion operators and motions:
+
+	dw - until the start of the next word, EXCLUDING its first character.
+	de - to the end of the current word, INCLUDING the last character.
+	d$ - to the end of the line, INCLUDING the last character.
+	
+- Using a count for a motion:
+
+	2w - move the cursor two words forward.
+	3e - move the cursor to the end of the third word forward.
+	0 - move to the start of the line.
+	
+- Using a count to delete more:
+
+	2dw - to delete the two words
+
+- Delete a whole line:
+	
+	dd - to delete the line.
+	2dd - to delete the two lines below.
+	
+- Undo command:
+	
+	u - to undo the last commands.
+	U - to fix a whole line.
+   CTRL-R - to redo the commands.
+
+- Put command:
+
+	dd - to delete line
+	p - put the line below the cursor.
+	
+- Replace command:
+
+	r - replace the character with new character.
+	R - replace the word with new word(s).
+
+- Change operator command:
+
+	ce - to change the end of a word.
+	c$ - change all words after cursor to new set of words.
+
+- Cursor location and file status:
+
+	CTRL-G - to show your location in the file and the file status.
+       numberG - to move to a line in the file.
+		* 3G - to move to the third line of the file.
+	G - to move to the bottom of the file.
+	gg - to move you to the start of the file.
+	
+- Search command:
+
+	/ - type in normal mode to search for a phrase.
+	n - search for the same phrase again.
+	N - search for the same phrase in the opposite direction.
+	? - search for a phrase in the backward direction.
+   CTRL-O - to go back to where you came from.
+   CTRL-I - to go forward.
+   
+- Matching parentheses command:
+
+	% - put cursor on parenthesis or bracket to find matching pair.
+		 (,),[,},{, or }
+
+- Substitute command:   
+   
+	:s/oldvalue/newvalue - only changes the first occurrence of "oldvalue" in the line.
+	:s/oldvalue/newvalue/g - globally changes the all occurrences of "oldvalue" in the line.
+   	:#,#s/oldvalue/newvalue/g - where the #,# are the line numbers of the range of lines 
+   	                            where the substitution is to be done.
+
+- Execute external shell command:
+
+	:! shell command - external command to execute.
+		 :!ls - listing of your directory.
+		 :!rm - remove file
+		 		 
+		 
+- Selecting text to write to file:
+
+		           v - to enter visual selection mode.
+	       :w nameOfFile - write to the specified file.
+      v motion :w nameOfFile - saves the visually selected lines in the file.
+      
+- Retrieving and merging files
+
+	:r fileName - retrieves the file's text data and puts it below the cursor position.
+
+- 'Set' option commmand for search:
+
+	:set ic - ignore case
+	:set hls - highlight case
+	:set is - show partial matches for search phrase
+
+- To list color schemes:
+
+	:colorscheme then TAB
+
+		or 
+
+	:colorscheme then CTRL + d
+
+		 
+===========================================================================
+			    Using SCP (secure copy)
+===========================================================================
+http://en.wikipedia.org/wiki/Secure_copy
+
+--------------------------
+Copying file to host:
+--------------------------
+set PATH=C:\public\TechTrain; %PATH%
+
+scp SourceFile user@host:directory/TargetFile
+
+ie1: scp mylocalfile.html root@myserverip:/var/www/html/
+
+# copy a whole directory to your server
+ie2: scp -r mylocaldirectory root@myserverip:/var/www/html/
+
+--------------------------
+Copying file from host:
+--------------------------
+scp user@host:/directory/SourceFile TargetFile
+
+ie1: scp -r /usr/applications/directory1 cjackson@10.149.153.15:/home/cjackson
+
+
+===========================================================================
+                            LS Command Examples
+===========================================================================
+---------------------
+File Listing
+---------------------
+	ls -al | more 
+	ls -al | less | grep [specific text]
+	vi [filename]
+
+------------------------------------------------
+1. Open Last Edited File Using ls -t
+------------------------------------------------
+- ls -t sorts the file by modification time, showing the last 
+  edited file first. head -1 picks up this first file.
+
+	ls -t -l
+
+------------------------------------------------
+2. Display One File Per Line Using ls -1
+------------------------------------------------
+- To show single entry per line, use -1 option
+
+	ls -1
+
+------------------------------------------------	
+3. Display All Information About Files/Directories 
+   Using ls -l
+------------------------------------------------   
+- To show long listing information about the file/directory.
+- 1st Character = File Type: First character specifies the type of the file.
+In the example above the hyphen (-) in the 1st character indicates that this is a normal file. 
+Following are the possible file type options in the 1st character of the ls -l output.
+
+Field Explanation 
+	- normal file 
+	d directory 
+	s socket file 
+	l link file 
+Field 1 | File Permissions: Next 9 character specifies the files permission. Each 3 characters refers to the read, 
+                            write, execute permissions for user, group and world In this example, -rw-r---- 
+                            indicates read-write permission for user, 
+                            read permission for group, and no permission for others. 
+Field 2 | Number of links: Second field specifies the number of links for that file. In this example, 1 indicates
+                           only one link to this file. 
+Field 3 | Owner: Third field specifies owner of the file. In this example, this file is owned by username ‘ramesh’. 
+Field 4 | Group: Fourth field specifies the group of the file. In this example, this file belongs to "team-dev’ group. 
+Field 5 | Size: Fifth field specifies the size of file. In this example, ’9275204' indicates the file size. 
+Field 6 | Last modified date & time: Sixth field specifies the date and time of the last modification of the file. 
+          In this example, ‘Jun 13 15:27' specifies the last modification time of the file. 
+Field 7 | File name: The last field is the name of the file. In this example, the file name is mthesaur.txt.gz. 
+
+	ls -l	
+
+------------------------------------------------	
+4. Display File Size in Human Readable Format 
+   Using ls -lh
+------------------------------------------------   
+- Use ls -lh (h stands for human readable form), to display file size in 
+  easy to read format. i.e M for MB, K for KB, G for GB.
+  
+	ls -lh
+
+------------------------------------------------
+5. Display Directory Information Using ls -ld
+------------------------------------------------
+- When you use "ls -l" you will get the details of directories content. But if you want the details of directory then you can use -d 
+  option as., For example, if you use ls -l /etc will display all the files under etc directory. But, if you want to display the 
+  information about the /etc/ directory, use -ld option
+  
+	ls -l /etc
+
+	     |
+	     V
+	
+	ls -ld /etc
+
+------------------------------------------------
+6. Order Files Based on Last Modified Time Using 
+ls -lt
+------------------------------------------------
+- To sort the file names displayed in the order of last modification time use the -t option. You will be finding it handy 
+  to use it in combination with -l option.
+
+	ls -lt
+
+
+------------------------------------------------
+7. Order Files Based on Last Modified Time (In 
+Reverse Order) Using ls -ltr
+------------------------------------------------
+- To sort the file names in the last modification time in reverse order. This will be showing the last edited file in the 
+  last line which will be handy when the listing goes beyond a page.
+
+	ls -ltr
+
+------------------------------------------------
+8. Display Hidden Files Using ls -a (or) ls -A
+------------------------------------------------
+- To show all the hidden files in the directory, use ‘-a option’. 
+  Hidden files in Unix starts with ‘.’ in its file name.
+
+	ls -a
+	
+- It will show all the files including the ‘.’ (current directory) 
+  and ‘..’ (parent directory). To show the hidden files, but not 
+  the ‘.’ (current directory) and ‘..’ (parent directory), 
+  use option -A.
+
+	ls -A
+
+------------------------------------------------
+9. Display Files Recursively Using ls -R
+------------------------------------------------
+- To show all the files recursively, use -R option. When you do this from /, it 
+  shows all the unhidden files in the whole file system recursively.
+
+	ls  -R /etc/sysconfig/networking
+
+
+------------------------------------------------
+10. Display File Inode Number Using ls -i
+------------------------------------------------
+- Use -i option as shown below to display inone number. Using inode number 
+  you can remove files that has special characters in it’s name
+
+	ls -i /etc/xinetd.d/
+
+------------------------------------------------
+11. Hide Control Characters Using ls -q
+------------------------------------------------
+- To print question mark instead of the non graphics control 
+  characters use the -q option.
+
+	ls -q
+
+------------------------------------------------
+12. Display File UID and GID Using ls -n
+------------------------------------------------
+- Lists the output like -l, but shows the uid and gid in 
+  numeric format instead of names.
+
+	ls -n ~/.bash_profile
+
+------------------------------------------------
+13. Visual Classification of Files With 
+    Special Characters Using ls -F
+------------------------------------------------
+- Instead of doing the ‘ls -l’ and then the checking for the 
+  first character to determine the type of file. You can use -F 
+  which classifies the file with different special character 
+  for different kind of files.
+
+	ls -F
+
+------------------------------------------------
+14. Visual Classification of Files With 
+    Colors Using ls -F
+------------------------------------------------
+- Recognizing the file type by the color in which it gets 
+  displayed is an another kind in classification of file. 
+  In the above output directories get displayed in blue, 
+  soft links get displayed in green, and ordinary files 
+  gets displayed in default color.
+
+	ls --color=auto
+
+------------------------------------------------
+15. Useful ls Command Aliases
+------------------------------------------------
+You can take some required ls options in the above, and make it as aliases.
+
+- Long list the file with size in human understandable form. 
+
+	alias ll="ls -lh"
+	
+- Classify the file type by appending special characters. 
+
+	alias lv="ls -F"
+	
+- Classify the file type by both color and special character. 
+
+	alias ls="ls -F --color=auto"
+
+===========================================================================	
+			TAIL command examples
+===========================================================================
+- Print the last 10 lines of a file by default.
+
+	tail filename.txt
+
+- Print N number of lines from the file named filename.txt
+
+	tail -n N filename.txt
+	
+- View the content of the file in real time using tail -f. This is useful to view 
+  the log files, that keeps growing. The command can be terminated using CTRL-C.
+
+	tail -f log-file
+
+- Print the last 10 lines of each FILE to standard output. With more than one FILE, 
+  precede each with a header giving the file name. With no FILE, or when FILE is -, 
+  read standard input. 
+
+
+	tail [OPTION]... [FILE]...  
+
+	tail
+
+===========================================================================	
+			LESS command examples
+===========================================================================
+- Less is very efficient while viewing huge log files, as it doesn’t need to load 
+  the full file while opening.
+
+	less huge-log-file.log
+	
+- One you open a file using less command, following two keys are very helpful.
+
+	CTRL+F - forward one window
+	
+	CTRL+B - backward one window
+
+
+===========================================================================
+            15 Examples To Master Linux Command Line History
+===========================================================================
+
+------------------------------------------------
+1. Display timestamp using HISTTIMEFORMAT
+------------------------------------------------
+- Typically when you type history from command line, it displays the command# 
+  and the command. For auditing purpose, it may be beneficial to display the 
+  timepstamp along with the command
+
+	export HISTTIMEFORMAT='%F %T '
+	
+	history | more
+
+------------------------------------------------
+2. Search the history using Control+R
+------------------------------------------------
+- When you’ve already executed a very long command, you can simply search history 
+  using a keyword and re-execute the same command without having to type it fully. 
+  Press Control+R and type the keyword. In the following example, I searched for 
+  red, which displayed the previous command 'cat /etc/redhat-release' in the 
+  history that contained the word red.
+
+	# [Press Ctrl+R from the command prompt,
+	which will display the reverse-i-search prompt]
+	(reverse-i-search)`red': cat /etc/redhat-release
+	[Note: Press enter when you see your command,
+	which will execute the command from the history]
+	# cat /etc/redhat-release
+	Fedora release 9 (Sulphur)
+
+------------------------------------------------
+3. Repeat previous command quickly using 
+   4 different methods
+------------------------------------------------
+- Sometime you may end up repeating the previous commands for 
+  various reasons. Following are the 4 different ways to 
+  repeat the last executed command.
+
+	1. Use the up arrow to view the previous command and press enter to execute it. 
+	2. Type !! and press enter from the command line 
+	3. Type !-1 and press enter from the command line. 
+	4. Press Control+P will display the previous command, press enter to execute it 
+
+------------------------------------------------
+4. Execute a specific command from history
+------------------------------------------------
+- In the following example, If you want to repeat the command #4, you can do !4 
+
+	# history | more
+	1  service network restart
+	2  exit
+	3  id
+	4  cat /etc/redhat-release
+
+	# !4
+	cat /etc/redhat-release
+	Fedora release 9 (Sulphur)
+
+------------------------------------------------
+5. Execute previous command that starts with a 
+   specific word
+------------------------------------------------
+- Type ! followed by the starting few letters of the command that you would like 
+  to re-execute. In the following example, typing !ps and enter, executed the 
+  previous command starting with ps, which is ‘ps aux | grep yp’.
+
+	!ps
+
+------------------------------------------------
+6. Control the total number of lines in the 
+   history using HISTSIZE
+------------------------------------------------
+- Append the following two lines to the .bash_profile and relogin to the bash 
+  shell again to see the change. In this example, only 450 command will be 
+  stored in the bash history.
+
+	# vi ~/.bash_profile
+	HISTSIZE=450
+	HISTFILESIZE=450  
+
+------------------------------------------------
+7. Change the history file name using HISTFILE
+------------------------------------------------
+- By default, history is stored in ~/.bash_history file. Add the following 
+  line to the .bash_profile and relogin to the bash shell, to store the history 
+  command in .commandline_warrior file instead of .bash_history file. 
+
+	# vi ~/.bash_profile
+	HISTFILE=/root/.commandline_warrior
+
+------------------------------------------------
+8. Eliminate the continuous repeated entry from 
+  history using HISTCONTROL
+------------------------------------------------
+- In the following example pwd was typed three times, when you do history, you 
+  can see all the 3 continuous occurrences of it. To eliminate duplicates, set 
+  HISTCONTROL to ignoredups.
+
+
+	export HISTCONTROL=ignoredups
+
+------------------------------------------------
+9. Erase duplicates across the whole history 
+  using HISTCONTROL
+------------------------------------------------
+- The ignoredups shown above removes duplicates only if they are consecutive 
+  commands. To eliminate duplicates across the whole history, set the 
+  HISTCONTROL to erasedups.
+
+	export HISTCONTROL=erasedups
+
+------------------------------------------------
+10. Force history not to remember a particular 
+  command using HISTCONTROL
+------------------------------------------------
+- When you execute a command, you can instruct history to ignore the command 
+  by setting HISTCONTROL to ignorespace AND typing a space in front of the 
+  command as shown below.
+
+	export HISTCONTROL=ignorespace
+
+------------------------------------------------
+11. Clear all the previous history using option -c
+------------------------------------------------
+- Sometime you may want to clear all the previous history, but 
+  want to keep the history moving forward.
+
+	history -c
+
+------------------------------------------------
+12. Subtitute words from history commands
+------------------------------------------------
+- When you are searching through history, you may want to execute 
+  a different command but use the same parameter from the command 
+  that you’ve just searched. In the example below, the !!:$ next to 
+  the vi command gets the argument from the previous command to the 
+  current command.
+  
+	# ls anaconda-ks.cfg
+	anaconda-ks.cfg
+	# vi !!:$
+	vi anaconda-ks.cfg  
+
+- In the example below, the !^ next to the vi command gets the first 
+  argument from the previous command (i.e cp command) to the current 
+  command (i.e vi command).
+
+	# cp anaconda-ks.cfg anaconda-ks.cfg.bak
+	anaconda-ks.cfg
+	# vi  !^
+	vi anaconda-ks.cfg
+
+------------------------------------------------
+13. Substitute a specific argument for a specific 
+  command.
+------------------------------------------------
+- In the example below, !cp:2 searches for the previous command in 
+  history that starts with cp and takes the second argument of cp 
+  and substitutes it for the ls -l command as shown below.
+  
+	# cp ~/longname.txt /really/a/very/long/path/long-filename.txt
+	# ls -l !cp:2
+	ls -l /really/a/very/long/path/long-filename.txt
+
+- In the example below, !cp:$ searches for the previous command in 
+  history that starts with cp and takes the last argument (in this 
+  case, which is also the second argument as shown above) of cp and 
+  substitutes it for the ls -l command as shown below.
+
+	# ls -l !cp:$
+	ls -l /really/a/very/long/path/long-filename.txt
+
+
+------------------------------------------------
+14. Disable the usage of history using HISTSIZE
+------------------------------------------------
+- If you want to disable history all together and don’t want bash shell 
+  to remember the commands you’ve typed, set the HISTSIZE to 0 as shown below.
+
+	export HISTSIZE=0
+
+
+------------------------------------------------
+15. Ignore specific commands from the history 
+using HISTIGNORE
+------------------------------------------------
+- Sometimes you may not want to clutter your history with basic commands such 
+  as pwd and ls. Use HISTIGNORE to specify all the commands that you want to 
+  ignore from the history. Please note that adding ls to the HISTIGNORE ignores 
+  only ls and not ls -l. So, you have to provide the exact command that you
+  would like to ignore from the history.
+
+	export HISTIGNORE="pwd:ls:ls -ltr:"
+
+
+===========================================================================
+			CHMOD command examples
+===========================================================================
+- chmod command is used to change the permissions for a file or directory.
+
+Following are the symbolic representation of three different roles:
+
+u is for user, 
+g is for group, 
+and o is for others. 
+Following are the symbolic representation of three different permissions:
+
+r is for read permission, 
+w is for write permission, 
+x is for execute permission. 
+
+- Give full access to user and group (i.e read, write and execute ) on a specific file.
+
+	chmod ug+rwx file.txt
+
+- Revoke all access for the group (i.e read, write and execute ) on a specific file.
+
+	chmod g-rwx file.txt
+
+- Apply the file permissions recursively to all the files in the sub-directories.
+
+	chmod -R ug+rwx file.txt
+
+-------------------------
+Setting Permissions
+-------------------------
+	chmod 777
+	chmod 7771
+
+
+===========================================================================
+			SU command examples
+===========================================================================
+- Switch to a different user account using su command. Super user can switch to any 
+  other user without entering their password.
+
+	su - USERNAME
+
+- Execute a single command from a different account name. In the following example, john 
+  can execute the ls command as raj username. Once the command is executed, it will come 
+  back to john’s account.
+
+	su - raj -c 'ls'
+
+- Login to a specified user account, and execute the specified shell instead of the default shell.
+
+
+------------------
+Login Commands:
+------------------
+	sudo su - [gives root access]
+	
+	ssh {ip address}
+
+	ssh -l username hostname
+===========================================================================
+			CHOWN command examples
+===========================================================================
+- chown command is used to change the owner and group of a file. \
+
+- To change owner to oracle and group to db on a file. i.e Change both owner 
+  and group at the same time.
+
+	chown oracle:dba dbora.sh
+
+- Use -R to change the ownership recursively.
+
+	chown -R oracle:dba /home/oracle
+
+
+===========================================================================
+			PASSWD command examples
+===========================================================================
+- Change your password from command line using passwd. This will prompt for 
+  the old password followed by the new password.
+
+	passwd
+
+- Super user can use passwd command to reset others password. This will not
+  prompt for current password of the user.
+
+	passwd USERNAME
+
+- Remove password for a specific user. Root user can disable password for a 
+  specific user. Once the password is disabled, the user can login without entering 
+  the password.
+
+	passwd -d USERNAME
+
+
+===========================================================================
+			WHEREIS command examples
+===========================================================================
+- When you want to find out where a specific Unix command exists (for example, where does 
+  ls command exists?), you can execute the following command.
+
+	whereis ls
+
+- When you want to search an executable from a path other than the whereis default path, 
+  you can use -B option and give path as argument to it. This searches for the executable 
+  lsmk in the /tmp directory, and displays it, if it is available.
+
+	whereis -u -B /tmp -f lsmk
+
+===========================================================================	
+			WHATIS command examples
+===========================================================================	
+- Whatis command displays a single line description about a command.
+
+	whatis ls
+
+	whatis ifconfig
+	
+===========================================================================
+			IFCONFIG command examples
+===========================================================================
+- Use ifconfig command to view or configure a network interface on the Linux system.
+  View all the interfaces along with status.
+
+	ifconfig -a
+
+- Start or stop a specific interface using up and down command as shown below.
+
+	ifconfig eth0 up
+
+	ifconfig eth0 down
+
+===========================================================================
+                          CAT Command Examples
+===========================================================================
+- You can view multiple files at the same time. Following example prints the 
+  content of file1 followed by file2 to stdout.
+
+	cat file1 file2
+
+- While displaying the file, following cat -n command will prepend the line 
+  number to each line of the output.
+
+	cat -n /etc/logrotate.conf
+
+--------------
+View hosts:
+--------------
+	cat /etc/hosts
+
+------------------
+View services:
+------------------
+	services --select-all
+
+	ps -elf | grep oc4j
+	ps -elf | more
+
+===========================================================================
+                          GREP Command Examples 
+===========================================================================
+
+-------------------
+File Locating:
+-------------------
+	updatedb
+	locate [filename]
+
+	locate J2EE | grep "J2EE/CAS" > filename_output.txt
+	locate *.wsdl | grep "/J2EE/CAS/" | more
+	locate -U / -l 0 [filewanttolocate]
+	grep "\.ear" CAS_output.txt
+
+	/usr/jdk1.5.0_04/bin/jar tf [filename.ear]
+
+------------------------------------------------
+1. Search for the given string in a single file
+------------------------------------------------
+- The basic usage of grep command is to search for a 
+  specific string in the specified file:
+  
+	grep "literal_string" filename
+
+------------------------------------------------
+2. Checking for the given string in multiple files.
+------------------------------------------------
+- This is also a basic usage of grep command.
+
+	grep "string" FILE_PATTERN
+	
+- For this example, let us copy the demo_file to demo_file1. 
+  The grep output will also include the file name in front 
+  of the line that matched the specific pattern as shown below. 
+  When the Linux shell sees the meta character, it does the 
+  expansion and gives all the files as input to grep.
+	
+	grep "this" demo_*
+	
+------------------------------------------------
+3. Case insensitive search using grep -i
+------------------------------------------------
+- This is also a basic usage of the grep. This searches for 
+  the given string/pattern case insensitively:
+  
+	grep -i "string" FILE
+
+- So it matches all the words such as "the", "THE" and "The"
+  case insensitively as shown below.
+
+	grep -i "the" demo_file
+
+------------------------------------------------
+4. Match regular expression in files
+------------------------------------------------
+- This is a very powerful feature, if you can use use 
+ regular expression effectively.
+ 
+	grep "REGEX" filename
+
+- In the following example, it searches for all the pattern that 
+  starts with "lines" and ends with "empty" with anything in-between. 
+  i.e To search "lines[anything in-between]empty" in the demo_file.
+
+	grep "lines.*empty" demo_file
+	
+From documentation of grep: A regular expression may be followed by one of 
+several repetition operators:
+
+? The preceding item is optional and matched at most once. 
+* The preceding item will be matched zero or more times. 
++ The preceding item will be matched one or more times. 
+{n} The preceding item is matched exactly n times. 
+{n,} The preceding item is matched n or more times. 
+{,m} The preceding item is matched at most m times. 
+{n,m} The preceding item is matched at least n times, but not more than m times. 
+
+------------------------------------------------
+5. Checking for full words, not for sub-strings 
+ using grep -w
+------------------------------------------------
+- If you want to search for a word, and to avoid it to match the substrings use -w 
+  option. Just doing out a normal search will show out all the lines. The following example 
+  is the regular grep where it is searching for "is". When you search for "is", without any 
+  option it will show out "is", "his", "this" and everything which has the substring "is".
+
+	grep -i "is" demo_file
+
+- The following example is the WORD grep where it is searching only for the word "is".
+
+	grep -iw "is" demo_file
+
+------------------------------------------------
+6. Displaying lines before/after/around the match 
+using grep -A, -B and -C
+------------------------------------------------
+- When doing a grep on a huge file, it may be useful to see some lines after the match. 
+  You might feel handy if grep can show you not only the matching lines but also the 
+  lines after/before/around the match.
+
+- Please create the following demo_text file for this example.
+
+	$ cat demo_text
+	4. Vim Word Navigation
+
+	You may want to do several navigation in relation to the words, such as:
+
+	 * e - go to the end of the current word.
+	 * E - go to the end of the current WORD.
+	 * b - go to the previous (before) word.
+	 * B - go to the previous (before) WORD.
+	 * w - go to the next word.
+	 * W - go to the next WORD.
+
+	WORD - WORD consists of a sequence of non-blank characters, separated with white space.
+	word - word consists of a sequence of letters, digits and underscores.
+
+	Example to show the difference between WORD and word
+
+	 * 192.168.1.1 - single WORD
+	 * 192.168.1.1 - seven words.
+
+
+6.1 Display N lines after match
+- -A is the option which prints the specified N lines after the match as shown below.
+
+	grep -A <N> "string" FILENAME
+
+- The following example prints the matched line, along with the 3 lines after it.
+
+	grep -A 3 -i "example" demo_text
+
+6.2 Display N lines before match
+- -B is the option which prints the specified N lines before the match.
+
+	grep -B <N> "string" FILENAME
+
+- When you had option to show the N lines after match, you have the -B option for the opposite.
+
+	grep -B 2 "single WORD" demo_text
+
+6.3 Display N lines around match
+- -C is the option which prints the specified N lines before the match. In some occasion 
+  you might want the match to be appeared with the lines from both the side. This options 
+  shows N lines in both the side(before & after) of match.
+
+	grep -C 2 "Example" demo_text
+
+------------------------------------------------
+7. Highlighting the search using GREP_OPTIONS
+------------------------------------------------
+- As grep prints out lines from the file by the pattern / string you had given, if you 
+  wanted it to highlight which part matches of the line. The following export you will 
+  get the highlighting of the matched searches:
+  
+	export GREP_OPTIONS='--color=auto' GREP_COLOR='100;8'
+
+------------------------------------------------
+8. Searching in all files recursively using grep -r
+------------------------------------------------
+- When you want to search in all the files under the current directory and its sub 
+  directory. -r option is the one which you need to use. The following example will look 
+  for the string "ramesh" in all the files in the current directory and all it’s subdirectory.
+
+	grep -r "ramesh" *
+	
+------------------------------------------------
+9. Invert match using grep -v
+------------------------------------------------
+- You had different options to show the lines matched, to show the lines before match, and to 
+  show the lines after match, and to highlight match. So definitely You’d also want the option
+  -v to do invert match.When you want to display the lines which does not matches the given 
+  string/pattern, use the option -v as shown below.
+  
+	grep -v "go" demo_text
+
+------------------------------------------------
+10. Display the lines which does not matches all 
+    the given pattern.
+------------------------------------------------
+
+	grep -v -e "pattern" -e "pattern"
+
+	grep -v -e "a" -e "b" -e "c" test-file.txt
+
+------------------------------------------------
+11. Counting the number of matches using grep -c
+------------------------------------------------
+- When you want to count that how many lines matches 
+  the given pattern/string, then use the option -c.
+
+	grep -c "go" demo_text
+
+- When you want do find out how many lines matches 
+  the pattern
+
+	grep -c this demo_file
+	
+- When you want do find out how many lines that 
+  does not match the pattern
+	
+	grep -v -c this demo_file
+
+------------------------------------------------
+12. Display only the file names which matches 
+    the given pattern using grep -l
+------------------------------------------------
+- If you want the grep to show out only the file names which matched the 
+  given pattern, use the -l (lower-case L) option. When you give multiple files to the grep as 
+  input, it displays the names of file which contains the text that matches the pattern, will 
+  be very handy when you try to find some notes in your whole directory structure.
+
+	grep -l this demo_*
+
+------------------------------------------------
+13. Show only the matched string
+------------------------------------------------
+- By default grep will show the line which matches the given pattern/string, but if you want 
+  the grep to show out only the matched string of the pattern then use the -o option.
+
+	grep -o "is.*line" demo_file
+
+------------------------------------------------
+14. Show the position of match in the line
+------------------------------------------------
+- When you want grep to show the position where it matches the pattern in the file, use 
+  the following options as
+
+	grep -o -b "pattern" file
+
+	grep -o -b "3" temp-file.txt
+
+------------------------------------------------
+15. Show line number while displaying the output 
+    using grep -n
+------------------------------------------------
+- To show the line number of file with the line matched. It does 1-based line numbering 
+  for each file. Use -n option to utilize this feature.
+
+	grep -n "go" demo_text
+
+===========================================================================
+			    FIND command examples
+===========================================================================
+------------------------------------------------
+1. Find Files Using Name
+------------------------------------------------
+- This is a basic usage of the find command. This example finds all files with name - 
+  MyCProgram.c in the current directory and all its sub-directories.
+
+	find -name "MyCProgram.c"
+
+------------------------------------------------
+2. Find Files Using Name and Ignoring Case
+------------------------------------------------
+- This is a basic usage of the find command. This example finds all files with name - 
+  MyCProgram.c (ignoring the case) in the current directory and all its sub-directories.
+
+	find -iname "MyCProgram.c"
+
+------------------------------------------------
+3. Limit Search To Specific Directory Level 
+   Using mindepth and maxdepth
+------------------------------------------------
+- Find the passwd file under all sub-directories starting from root directory.
+
+	find / -name passwd
+
+- Find the passwd file under root and one level down. (i.e root - level 1, and 
+  one sub-directory - level 2)
+
+	find -maxdepth 2 -name passwd
+
+- Find the passwd file under root and two levels down. (i.e root - level 1, and 
+  two sub-directories - level 2 and 3 )
+
+	find / -maxdepth 3 -name passwd
+
+- Find the password file between sub-directory level 2 and 4.
+
+	find -mindepth 3 -maxdepth 5 -name passwd
+
+------------------------------------------------
+4. Executing Commands on the Files Found by the 
+   Find Command.
+------------------------------------------------
+- In the example below, the find command calculates the md5sum of all the files 
+  with the name MyCProgram.c (ignoring case). {} is replaced by the current file 
+  name.
+
+	find -iname "MyCProgram.c" -exec md5sum {} \;
+
+------------------------------------------------
+5. Inverting the match.
+------------------------------------------------
+- Shows the files or directories whose name are not MyCProgram.c .Since the 
+  maxdepth is 1, this will look only under current directory.
+
+	find -maxdepth 1 -not -iname "MyCProgram.c"
+
+
+------------------------------------------------
+6. Finding Files by its inode Number.
+------------------------------------------------
+- Every file has an unique inode number, using that we can identify that file. 
+  Create two files with similar name. i.e one file with a space at the end.
+
+	touch "test-file-name"
+
+	touch "test-file-name "
+
+	ls -1 test*
+
+- From the ls output, you cannot identify which file has the space at the end. 
+  Using option -i, you can view the inode number of the file, which will be different
+  for these two files.
+
+	ls -i1 test*
+
+- You can specify inode number on a find command as shown below. In this example, find
+  command renames a file using the inode number.
+
+	find -inum 16187430 -exec mv {} new-test-file-name \;
+
+	ls -i1 *test*
+
+- You can use this technique when you want to do some operation with the files which are 
+  named poorly as shown in the example below. For example, the file with name - file?.txt
+  has a special character in it. If you try to execute "rm file?.txt", all the following 
+  three files will get removed. So, follow the steps below to delete only the "file?.txt" 
+  file.
+
+- Find the inode numbers of each file.
+
+	ls -i1
+
+- Use the inode number to remove the file that had special character in it as shown below.
+
+	find -inum 804180 -exec rm {} \;
+
+------------------------------------------------
+7. Find file based on the File-Permissions
+------------------------------------------------
+- Following operations are possible.
+
+	* Find files that match exact permission 
+	* Check whether the given permission matches, irrespective of other permission bits 
+	* Search by giving octal / symbolic representation 
+
+- For this example, let us assume that the directory contains the following files. Please note 
+  that the file-permissions on these files are different.
+
+	ls -l
+
+- Find files which has read permission to group. Use the following command to find all files 
+  that are readable by the world in your home directory, irrespective of other permissions for 
+  that file.
+
+	find . -perm -g=r -type f -exec ls -l {} \;
+
+- Find files which has read permission only to group.
+
+	find . -perm g=r -type f -exec ls -l {} \;
+
+- Find files which has read permission only to group [ search by octal ]
+
+	find . -perm 040 -type f -exec ls -l {} \;
+
+------------------------------------------------
+8. Find all empty files (zero byte file) in your 
+   home directory and its subdirectory
+------------------------------------------------
+- Most files of the following command output will be lock-files and place holders created by 
+  other applications.
+
+	find ~ -empty
+
+- List all the empty files only in your home directory.
+
+	find . -maxdepth 1 -empty
+
+- List only the non-hidden empty files only in the current directory.
+
+	find . -maxdepth 1 -empty -not -name ".*"
+	
+------------------------------------------------
+9. Finding the Top 5 Big Files
+------------------------------------------------
+- The following command will display the top 5 largest file in the current directory and its 
+  subdirectory. This may take a while to execute depending on the total number of files the 
+  command has to process.
+
+	find . -type f -exec ls -s {} \; | sort -n -r | head -5
+
+------------------------------------------------
+10. Finding the Top 5 Small Files
+------------------------------------------------
+- Technique is same as finding the bigger files, but the only difference the sort is 
+  ascending order.
+
+	find . -type f -exec ls -s {} \; | sort -n  | head -5  
+
+- In the above command, most probably you will get to see only the ZERO byte files ( empty 
+  files ). So, you can use the following command to list the smaller files other than the 
+  ZERO byte files.
+
+	find . -not -empty -type f -exec ls -s {} \; | sort -n  | head -5
+
+------------------------------------------------
+11. Find Files Based on file-type using option -type
+------------------------------------------------
+- Find only the socket files.
+
+	find . -type s
+
+- Find all directories
+
+	find . -type d
+
+- Find only the normal files
+
+	find . -type f
+
+- Find all the hidden files
+
+	find . -type f -name ".*"
+
+- Find all the hidden directories
+
+	find -type d -name ".*"
+
+------------------------------------------------
+12. Find files by comparing with the modification 
+    time of other file.
+------------------------------------------------
+- Show files which are modified after the specified file. The following find command displays 
+  all the files that are created/modified after ordinary_file.
+
+	ls -lrt
+	
+	find -newer ordinary_file
+
+------------------------------------------------
+13. Find Files by Size
+------------------------------------------------
+- Using the -size option you can find files by size.
+
+  Find files bigger than the given size.
+
+	find ~ -size +100M
+
+- Find files smaller than the given size
+
+	find ~ -size -100M
+
+- Find files that matches the exact given size
+
+	find ~ -size 100M
+	
+------------------------------------------------
+14. Create Alias for Frequent Find Operations
+------------------------------------------------
+- If you find some thing as pretty useful, then you can make it as an alias. And 
+  execute it whenever you want.
+
+  Remove the files named a.out frequently.
+
+	alias rmao="find . -iname a.out -exec rm {} \;"
+
+	rmao
+
+- Remove the core files generated by c program.
+
+	alias rmc="find . -iname core -exec rm {} \;"
+
+	rmc
+	
+------------------------------------------------
+15. Remove big archive files using find command
+------------------------------------------------
+- The following command removes *.zip files that are over 100M.
+
+	find / -type f -name *.zip -size +100M -exec rm -i {} \;"
+	
+- Remove all *.tar file that are over 100M using the alias rm100m (Remove 100M). Use 
+  the similar concepts and create alias like rm1g, rm2g, rm5g to remove file size greater 
+  than 1G, 2G and 5G respectively.
+
+	alias rm100m="find / -type f -name *.tar -size +100M -exec rm -i {} \;"
+	alias rm1g="find / -type f -name *.tar -size +1G -exec rm -i {} \;"
+	alias rm2g="find / -type f -name *.tar -size +2G -exec rm -i {} \;"
+
+------------------------------------------------
+16. Find files whose content got updated within 
+    last 1 hour
+------------------------------------------------
+- To find the files based up on the content modification time, the option -mmin, and -mtime 
+  is used. Following is the definition of mmin and mtime from man page.
+
+	-mmin n File’s data was last modified n minutes ago. 
+	-mtime n File’s data was last modified n*24 hours ago. 
+
+- Following example will find files in the current directory and sub-directories, whose 
+  content got updated within last 1 hour (60 minutes)
+
+	find . -mmin -60
+
+- In the same way, following example finds all the files (under root file system /) that 
+  got updated within the last 24 hours (1 day).
+  
+	find / -mtime -1  
+
+------------------------------------------------
+17. Find files which got accessed before 1 hour
+------------------------------------------------
+- To find the files based up on the file access time, the option -amin, and -atime is used. 
+  Following is the definition of amin and atime from find man page.
+
+	-amin n File was last accessed n minutes ago 
+	-atime n File was last accessed n*24 hours ago 
+
+- Following example will find files in the current directory and sub-directories, which got 
+  accessed within last 1 hour (60 minutes).
+
+	find -amin -60
+
+- In the same way, following example finds all the files (under root file system /) that got 
+  accessed within the last 24 hours (1 day).
+	
+	find / -atime -1
+
+------------------------------------------------
+18. Find files which got changed exactly before 
+    1 hour
+------------------------------------------------
+- To find the files based up on the file inode change time, the option -cmin, and -ctime is used. 
+  Following is the definition of cmin and ctime from find man page.
+
+	-cmin n File’s status was last changed n minutes ago. 
+	-ctime n File’s status was last changed n*24 hours ago.
+
+- Following example will find files in the current directory and sub-directories, which changed 
+  within last 1 hour (60 minutes).
+
+	find . -cmin -60
+
+- In the same way, following example finds all the files (under root file system /) that got 
+  changed within the last 24 hours (1 day).
+
+	find / -ctime -1
+
+===========================================================================
+			    LOCATE command examples
+===========================================================================
+- Using locate command you can quickly search for the location of a specific file (or group 
+  of files). Locate command uses the database created by updatedb. The example below shows all 
+  files in the system that contains the word crontab in it.
+
+	locate crontab
+
+
+===========================================================================
+			    PS command examples
+===========================================================================
+
+-------------------------
+List all of your current 
+processes running
+-------------------------
+- Type ps and hit enter. This will list all of your current 
+  processes running, or stopped.
+  
+	ps
+
+-------------------------
+List all users’ and their 
+processes who are currently 
+logged
+-------------------------
+- This command allows you to list all users’ and their processes 
+  who are currently logged in to the Linux server, or a particular 
+  user’s processes.
+
+	w
+
+-------------------------
+Top command displays the 
+top processes
+-------------------------
+- top command displays the top processes in the system ( by 
+  default sorted by cpu usage ). To sort top output by any column, 
+  Press O (upper-case O), which will display all the possible columns. 
+  To displays only the processes that belong to a particular user use 
+  -u option.
+  
+	top -u oracle
+
+
+===========================================================================
+			   DF command examples
+===========================================================================
+- Displays the file system disk space usage. By default df -k displays output in bytes.
+
+	df -k
+
+- df -h displays output in human readable form. i.e size will be displayed in GB’s.
+
+	df -h
+
+- Use -T option to display what type of file system.
+
+	df -T
+
+
+===========================================================================
+			CHKCONFIG command examples
+===========================================================================
+-------------------------
+Runlevel information for 
+system services
+-------------------------
+chkconfig  
+
+- chkconfig provides a  simple  command-line  tool  for  maintaining  the
+  /etc/rc[0-6].d  directory  hierarchy by relieving system administrators
+  of the task of directly manipulating the  numerous  symbolic  links  in
+  those directories.
+
+chkconfig --list [name]
+chkconfig --add name
+chkconfig --del name
+chkconfig [--level levels] name <on|off|reset>
+chkconfig [--level levels] name
+
+
+===========================================================================
+			RM command examples
+===========================================================================
+- Get confirmation before removing the file
+
+	rm -i filename.txt
+
+- It is very useful while giving shell metacharacters in the file name argument.
+  Print the filename and get confirmation before removing the file.
+
+	rm -i file*
+
+- Following example recursively removes all files and directories under the example 
+  directory. This also removes the example directory itself.
+
+	rm -r example
+
+===========================================================================
+			CP command examples
+===========================================================================
+- Copy file1 to file2 preserving the mode, ownership and timestamp.
+
+	cp -p file1 file2
+
+- Copy file1 to file2. if file2 exists prompt for confirmation before overwritting it.
+
+	cp -i file1 file2
+
+
+===========================================================================
+			MV command examples
+===========================================================================
+- Rename file1 to file2. if file2 exists prompt for confirmation before overwritting it.
+  Note: mv -f is just the opposite, which will overwrite file2 without prompting.
+
+	mv -i file1 file2
+
+- mv -v will print what is happening during file rename, which is useful while specifying 
+  shell metacharacters in the file name argument.
+
+	mv -v file1 file2
+
+===========================================================================
+			MKDIR command examples
+===========================================================================
+- Following example creates a directory called temp under your home directory.
+
+	mkdir ~/temp	
+
+- Create nested directories using one mkdir command. If any of these directories exist 
+  already, it will not display any error. If any of these directories doesn’t exist, it will 
+  create them.
+
+	mkdir -p dir1/dir2/dir3/dir4/
+
+
+-------------------------
+dos2unix - DOS/MAC to 
+UNIX text file format 
+converter
+-------------------------
+dos2unix < BudgetaryTransactionLineResponse.xsd > tempBtr.xsd
+
+
+-------------------------
+To write and execute
+bash script
+-------------------------
+- Find out where the bash interpreter is located:
+	
+	which bash
+
+- Create bash script with bash interpreter location:
+
+	which bash > script.sh
+
+- Open the script in text editor (ie: VI)
+	
+	vi scipt.sh
+	
+- Enter some code:
+	
+	#!/bin/bash
+	# declare STRING variable
+	STRING="Hello World"
+	
+	#print variable on a screen
+	echo $STRING
+
+- Navigate to directory where the script is located to make it executable:
+
+	chmod +x script.sh
+	
+- Execute the bash script:	
+
+	./script.sh
+		
+-------------------------
+TAR Backup
+-------------------------
+#!/bin/bash
+
+tar -czf scriptNameBackup.tar.gz /some/home/directory
+	
+---------------------------------
+PuTTY Trick 10: Launch Most 
+frequently Used PuTTY Session Quickly
+---------------------------------
+1) Create a new PuTTY windows shortcut 
+2) Rename this shortcut to your favorite name. For example, dev-db. 
+3) Right mouse-click on this shortcut and select properties. 
+4) In the Target field, at the end append "-load putty-session-name". 
+5) Now, anytime you click on the dev-db windows shortcut, it will automatically launch the dev-db PuTTY session. 
+
+---------------------------------
+Count of files in current directory:
+---------------------------------
+ls -1 | wc -l
+
+---------------------------------
+Basic MySQL Commands:
+---------------------------------
+show databases;
+
+use gcefilecheck;
+
+show tables;
+
+desc Results;
+
+select * from Results where Classname= "EJBTester.class";
+
+select Javaname, count(*) from Results where Ffound = "Y" group by Classname;
+
+
+----------------
+Setting Timezone
+----------------
+date
+export TZ='UTC'
+
+
+----------------
+Open up terminal 
+(Ubuntu)
+----------------
+ctrl + alt + t
+
+------------------------
+Creating a Symbolic Link
+------------------------
+To create a symbolic link, use the syntax:
+ln -s [directory or file to link] [the path of the new link]
+
+http://heatware.net/linux-unix/how-create-delete-symbolic-links-linux/
+http://help.hardhathosting.com/question.php/95
+
+------------------------
+Set system Path variables
+------------------------
+. ~/.bashrc
+~ means home directory
+------------------------
+Oracle JDK Install
+------------------------
+To add JAVA_HOME variable do so by adding it to the .bashrc file in your home directory
+
+Open .bashrc file using an editor. If you use VI then
+vi ~/.bashrc
+
+and add the following 2 lines in your .bashrc file.
+
+JAVA_HOME=/usr/lib/jvm/jdk1.7.0_04/
+export JAVA_HOME
+
+echo $JAVA_HOME
+
+- Use the Ctrl-Alt-F1 shortcut keys to switch to the first console.
+- To switch back to Desktop mode, use the Ctrl-Alt-F7 shortcut keys.
+
+
+ps -ef | grep tomcat
+ps -ef | grep Catalina
+
+
+------------------------
+Changing Hostname name
+------------------------
+sudo hostname newNameofHostname
+
+
+------------------------
+Stop running script
+------------------------
+Ctrl + C
+
+------------------------
+Command-line history
+------------------------
+history
+
+history nameOfCommand
+
+
+------------------
+Check running pid
+------------------
+
+	fuser -n tcp 80
+
+
+	kill -9 26622
+	
+
+-----------------------------------------
+Free space of all mounted drives
+-----------------------------------------	
+
+	df -h
+
+	fdisk -l
+
+
+---------------------------------------
+Changing Hostname for Linux
+---------------------------------------
+Change hostname or Server name of a Linux Machine 
+http://www.debianadmin.com/change-hostname-or-server-name-of-a-linux-machine.html
+
+Change Hostname Permanently on Debian or Ubuntu 
+http://adminuser.wordpress.com/2008/02/10/change-hostname-permanently-on-debian-or-ubuntu/
+
+
+https://localhost:8443/
+
+Change files in:
+/etc/hostname
+/etc/hosts
+
+---------------------------------------
+Web browser Debugging Hot keys / Commands
+---------------------------------------
+- For IE: F12 to open Developer Tools UI
+- For FF: Ctrl + F12 to open Firebug
+- For IE: In the Debugger
+	(F5) = Continue
+	(Ctrl+Shift+B) = Break All
+	(F11) = Step Into
+	(Shift+F11) = Step Over
+	(Shift+F5) = Stop
+
+- For IE: Developer Tools UI Console commands
+(Debugging in Javascript)	
+	
+window.console.log("DEBUG: Testing Windows logging message");
+
+window.console.warn("DEBUG: Testing Windows warning message");
+
+window.console.error("DEBUG: Testing Windows error message");
+
+window.console.info("DEBUG: Testing Windows info message");
+
+//Prints the properties of "object" to the console
+window.console.dir(objectName);
+
+
+
+
+
+
+=======================================
+Eclipse Hot keys
+=======================================
+Ctrl + Shift + F = Format the code
+
+Ctrl + D = Delete line
+
+Ctrl + Shift + O = To import libraries and cleanup unused libraries
+
+Shift + Alt + J = To generate JavaDoc
+
+- run the ora_developer_seeddb_incl_vessels_posreps_ports_polygons to repopulate/recreate DB
+- comment/uncomment contextInitialized method from lrit_wi/src/mil/uscg/lrit/wi/context/ContextListener.java
+- Press F4 to go directly to the class of an associated method. (ie: interface method going to actual method)
+- Whenever you need to run JUnit for the first time, need to run buildconf ant script in the targeted project ***
+
+---------------------------------------
+Junit / ANT Commands
+---------------------------------------
+- lrit_dc_common
+        * clean: remove all build products
+        * compile: build all java classes
+
+- ANT: genclasses and buildconf
+- ANT: Whenever password change for DB, need to change Ant's runtime properties -
+        * Go to Window > Preferences
+        * Expand Ant > Runtime
+        * Click Properties tab
+        * Change db.dc.password to whatever new password
+
+- ANT: To get the description of all ANT targets, go to "External Tools Configurations"
+- assertTrue() is used when you want to test for a condition when it's true.
+- assertFalse() is used when you want to test for a condition when it's true.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+        grep ~/bin/apache-tomcat-7.0.30/logs/catalina.out
+
+To change the terminal prompt, change the PS1 setting:
+
+        PS1="local['whoami']: "
+        PS1="'hostname'['whoami']: "
+
+Start/Stop Tomcat Instance:
+
+         ~/bin/apache-tomcat-7.0.30/bin/startup.sh
+         ~/bin/apache-tomcat-7.0.30/bin/shutdown.sh
+
+Ubuntu hiding/unhiding hidden files (on GUI):
+
+        Ctrl + h
+
+To see a file in real time:
+
+        tail -f name_of_file.txt (ie: localhost_access_log.2012-10-02.txt)
+
+        tail -f /home/cjackson/bin/apache-tomcat-7.0.30/logs/catalina.out
+
+
++++++++++++++++++++++++++++++++++++
+        Debian comamnds
++++++++++++++++++++++++++++++++++++
+# List of all the currently installed DEB packages
+        dpkg --get-selections
+
+        dpkg --get-selections | grep nameOfpackageToLookFor
+
+        dpkg --list [more verbose] or dpkg -l
+
+# More verbose report for a particular package
+        dpkg --status nameOfPackage
+
+# Find the locations of the files within a package
+
+        dpkg -L nameOfPackage
+
+# Find out if Debian package is installed or not (status)
+
+        dpkg -s nameOfPackage |  grep Status
+
+# Obtain the latest packages
+
+	apt-get update
+
+# List ach dependency a package has
+
+        apt-cache depends nameOfPackage
+
+# ruby developer packages
+
+        sudo apt-get install ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8
+        sudo apt-get install libreadline-ruby1.8 libruby1.8 libopenssl-ruby
+
+# nokogiri requirements
+
+        sudo apt-get install libxslt-dev libxml2-dev
+        
+# Installing JRE/JDK
+
+	apt-get install default-jre
+	
+	apt-get install default-jdk
+
+# Installing/Uninstalling DEB packages:
+
+Install:
+        sudo dpkg -i name_of_pckg_0.6.8_amd64.deb
+
+Details
+        sudo dpkg -l | grep 'name_of_pckg'
+
+Uninstall
+        sudo dpkg -r nameOfPkg:i386
+        
+
++++++++++++++++++++++++++++++++++++
+        Gems/Rails comamnds
++++++++++++++++++++++++++++++++++++
+
+# Install GEM file
+	gem install nameOfFile.gem
+	
+# Uninstall GEM file	
+
+	gem uninstall nameOfFile.gem
+
+# Check installed gems for problems:
+
+        gem check -v nameOfGem
+
+# Gem listings        
+
+	gem list
+
+# List the dependencies of a gem:
+
+        gem dependency rails -v 0.10.1
+
+        gem dependency --pipe
+
+# Display information about the gem environment:
+
+        gem environment
+
+
+
+
+=======================================
+Installing Rails gems
+=======================================
+http://help.rubygems.org/kb/rubygems/installing-gems-with-no-network
+
+- Looking for the targetted platform
+(Run the following command on the Debian server)
+        gem env
+
+(Run the following command on system with internet connection)
+        gem install rails -i C:\gemRepo --platform x86-mswin32-60 --include-dependencies --no-rdoc --no-ri
+
+	gem install rails -i C:\gemRepo --platform x86-linux --include-dependencies --no-rdoc --no-ri
+
+
+- Installing just the gems on Windows into a temp directory
+        gem install rails -i C:\gemRepo --include-dependencies --no-rdoc --no-ri
+
+        gem install -v=1.1.6 rails--include-dependencies
+
+
+- Install on Debian server
+        gem install --force --local *.gem
+
+x86-linux
+
+- Uninstall all gems
+
+	'gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
+
+
+	'gem list | xargs gem uninstall -aIx'
+
+
+
+- Getting the latest gems
+
+	sudo gem update
+	
+	sudo gem update --system
+	
+	sudo gem install rails --include-dependencies
+
+
+
+You can find the default location where Gem executables will be installed with:
+
+	ruby1.9.1 -rubygems -e 'puts Gem.default_bindir'
+
+On Debian 6.0, this is /var/lib/gems/1.9.1/bin, so the rails binary is /var/lib/gems/1.9.1/bin/rails. 
+If you use a lot of RubyGems with executables on your system(s), I would add this bin directory to your PATH.
+
+export PATH=/var/lib/gems/1.9.1/bin:$PATH
+
+The location of binaries installed by RubyGems on Debian has been a highly contested topic over the years. 
+The next version of Debian (Wheezy, the current testing version) will install binaries in /usr/local/bin. See this Debian bug report for background:
+
+
+/var/lib/gems/1.8/bin/rails
+
+/var/lib/gems/1.8/bin/rails-3.2.9
+
+
+
+=======================================
+Ubuntu Related
+=======================================
+
+Use this to Remove/Uninstall Compiz Unity:
+
+	sudo apt-get remove compizconfig-settings-manager
+	sudo apt-get remove compiz-fusion-plugins-extra
+	sudo apt-get remove compiz-plugins-extra
+	sudo apt-get purge compiz*
+
+Then to Re-install Compiz Unity use:
+
+	sudo apt-get install unity-2d
+	sudo apt-get install ubuntu-desktop
+	sudo apt-get install ubuntu-desktop-2d
+	sudo apt-get install compizconfig-settings-manager
+	sudo apt-get install xserver-xgl
+	sudo apt-get install emerald
+	sudo apt-get install compiz-fusion-plugins-extra
+	sudo apt-get install git compiz-plugins-extra
+	sudo apt-get install compiz-plugins-extra
+	sudo apt-get install unity
+
+
+Install classic gnome desktop in ubuntu 12.04
+
+    sudo apt-get install gnome-session-fallback
+
+or
+
+    sudo apt-get install gnome-panel
+	
+	
+---------------------------------------
+Important LRIT Logs:
+---------------------------------------	
+cd opt/ide/logs (audit logs, idecmd logs and journal import logs)
+cd opt/tomcat/logs (ide logs)
+
+    tail -f ide.log (view log in realtime)
+
+
++++++++++++++++++++++++++++++++++   ORACLE/DB Stuff   +++++++++++++++++++++++++++++++++++++++++++++++++
+
+http://www.orafaq.com/faq/what_are_the_difference_between_ddl_dml_and_dcl_commands
+
+Data Definition Language (DDL) statements are used to define the database structure or schema. Some examples:
+
+    CREATE - to create objects in the database
+    ALTER - alters the structure of the database
+    DROP - delete objects from the database
+    TRUNCATE - remove all records from a table, including all spaces allocated for the records are removed
+    COMMENT - add comments to the data dictionary
+    RENAME - rename an object
+
+Data Manipulation Language (DML) statements are used for managing data within schema objects. Some examples:
+
+    SELECT - retrieve data from the a database
+    INSERT - insert data into a table
+    UPDATE - updates existing data within a table
+    DELETE - deletes all records from a table, the space for the records remain
+    MERGE - UPSERT operation (insert or update)
+    CALL - call a PL/SQL or Java subprogram
+    EXPLAIN PLAN - explain access path to data
+    LOCK TABLE - control concurrency
+
+
+=======================================
+Oracle SQLPlus linux commands
+=======================================
+sqlplus64
+
+sqlplus64 cjackson/ThePassword1$.!1234@NDCDEV
+sqlplus64 cjackson@NDCDEV
+test1234 --> ThePassword1$.!1234
+
+
+sqlplus64 cjackson@NDCTEST
+
+
+
+SQL script path format:
+---------------------------------------
+script to run: @/home/cjackson/scripts/Oracle/NameOfScript.sql
+spool data:
+SPOOL /home/cjackson/scripts/Oracle/NameOfScript_results.lst
+
+
+@/home/cjackson/scripts/Oracle/begin.sql
+
+select table_name, column_name
+from all_tab_columns
+where column_name = '';
+
+
+
+
+=======================================
+SpiderMonkey Notes:
+=======================================
+1) Get all linux prerequisite tools and dependencies:
+
+https://developer.mozilla.org/en-US/docs/Developer_Guide/Build_Instructions/Linux_Prerequisites
+
+Ubuntu command:
+
+        sudo apt-get install mercurial g++ make autoconf2.13 yasm libgtk2.0-dev libglib2.0-dev libdbus-1-dev libdbus-glib-1-dev
+        libasound2-dev libcurl4-openssl-dev libiw-dev libxt-dev mesa-common-dev
+
+2) Download SpiderMonkey source code:
+
+https://developer.mozilla.org/en-US/docs/SpiderMonkey/Build_Documentation
+
+        wget http://ftp.mozilla.org/pub/mozilla.org/js/js185-1.0.0.tar.gz
+
+        tar xzf js185-1.0.0.tar.gz
+
+3) Build and install SpiderMonkey source code:
+
+        cd js/src
+        autoconf-2.13
+        ./configure
+        make
+
+4) Test that the build executable works by:
+
+        ./js --help
+
+
+Running SpiderMonkey Runtime:
+
+1) Get into SpiderMonkey prompt:
+
+        ./js
+
+2) To load external file, use command:
+
+        load('name/of/directory/with/the/file.js')
+    ie: load('/home/cjackson/bin/spiderMonkeyJS/jsFiles/testJS.js')
+
+3) To execute function:
+
+        function f(x) { return x + 5; }
+
+        f(7)
+
+5) To quit out of interactive mode:
+
+        quit(); or Ctrl+D
+
+https://developer.mozilla.org/en-US/docs/SpiderMonkey/Introduction_to_the_JavaScript_shell
+
+
+
+=======================================
+CURL Notes:
+=======================================
+6 essential cURL commands for daily use
+http://www.codediesel.com/tools/6-essential-curl-commands/
+
+REST-esting with cURL: File Handling
+http://blogs.plexibus.com/2010/04/12/rest-esting-with-curl-file-handling/
+
+How to POST JSON data with Curl from Terminal/Commandline to Test Spring REST?
+http://stackoverflow.com/questions/7172784/how-to-post-json-data-with-curl-from-terminal-commandline-to-test-spring-rest
+
+
+Example Curl Usage
+------------------------
+%CURL_HOME%\curl --trace-ascii - -X DELETE -H "Content-type: application/vnd.slc+json" \
+"localhost:8080/direct/user/e6eb800e-f814-4ded-926f-e5896853a600"
+%CURL_HOME%\curl -u "admin:admin" -X DELETE "http://localhost:8080/direct/user/d642f4f9-2db8-48d9-84e9-8ab7c815b53a.json"
+
+
+%CURL_HOME%\curl -i -H "Accept: application/json" http://localhost:8080/direct/user/d642f4f9-2db8-48d9-84e9-8ab7c815b53a.json
+%CURL_HOME%\curl -u "admin:admin" -i -H "Accept: application/json" http://localhost:8080/direct/user/d642f4f9-2db8-48d9-84e9-8ab7c815b53a.json
+%CURL_HOME%\curl -u "admin:admin" http://localhost:8080/direct/user/d642f4f9-2db8-48d9-84e9-8ab7c815b53a.json
+%CURL_HOME%\curl -i -v --user-agent "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0) Gecko/20100101 Firefox/20.0" -i -H "Accept: application/json" -u admin -H "Accept: application/json" http://localhost:8080/direct/user.json
+%CURL_HOME%\curl -i -v -i -H "Accept: application/json" -u admin -H "Accept: application/json" http://localhost:8080/direct/user.json
+%CURL_HOME%\curl -i -u "admin:admin" -H "Accept: application/json" http://localhost:8080/direct/user/current.json
+
+http://localhost:8080/direct/session/new?_username=admin&_password=admin
+
+%CURL_HOME%\curl -A "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0) Gecko/20100101 Firefox/20.0" -i -H "Accept: application/json" "http://localhost:8080/direct/user/e6eb800e-f814-4ded-926f-e5896853a600.json"
+%CURL_HOME%\curl -i -H "Accept: application/json"  "http://localhost:8080/direct/user/e6eb800e-f814-4ded-926f-e5896853a600.json"
+%CURL_HOME%\curl -v -i -H "Accept: application/json" -x POST -d "_username=admin&_password=admin" http://localhost:8080/direct/session/new
+
+%CURL_HOME%\curl -v --cookie "JSESSIONID=d6d5b31a-9aee-4907-8c6d-637ff4d2c6ec4.localhost; Path=/; HttpOnly" -o curlResults.txt  http://localhost:8080/direct/user/d642f4f9-2db8-48d9-84e9-8ab7c815b53a.json
+
+%CURL_HOME%\curl -i -H "Accept: application/json" http://localhost:8080/direct/session/0db4653b-4cad-4418-937c-91f1a39850d0 "http://localhost:8080/direct/user/e6eb800e-f814-4ded-926f-e5896853a600.json"
+
+
+
+=======================================
+Perl Notes:
+=======================================
+
+Perl Reference Links:
+--------------------------
+LWP::UserAgent 
+http://search.cpan.org/~gaas/libwww-perl-6.05/lib/LWP/UserAgent.pm
+
+Perl Debugger Tutorial: 10 Easy Steps to Debug Perl Program
+http://www.thegeekstuff.com/2010/05/perl-debugger/
+
+Passing Cookie Value using HTTP::Cookie in Perl
+http://stackoverflow.com/questions/7892546/passing-cookie-value-using-httpcookie-in-perl
+
+
+
+To enable Perl debugger:
+--------------------------
+
+	perl -d .\nameOfPerlFile.pl
+
+	
+Install additional perl modules 
+(libraries) 
+from http://www.cpan.org/
+--------------------------
+
+     c:\> cpan Module::Name
+	
+
+Perl one liners:
+---------------------------
+
+	perl -MLWP::UserAgent -e 'LWP::UserAgent->new->delete("http://localhost:8080/direct/user/d642f4f9-2db8-48d9-84e9-8ab7c815b53a.json", Content => "data");'
+
+	perl -LWP::UserAgent -e 'LWP::UserAgent->new->delete("http:/localhost:8080/direct/user/d642f4f9-2db8-48d9-84e9-8ab7c815b53a.json");'
+
+
+Perl code examples:
+---------------------------
+
+# Example of passing parameters to a Perl function
+sub firstSub{
+   my($firstArray, $secondArray) = @_; #passing parameters from 'atunderscore' to the specified variables
+   
+   print("The first array is $firstArray.\n");
+   print("The second array is $secondArray.\n");
+
+}
+
+# Example of calling Perl function with some arguments
+#firstSub( (1..5), ("A".."E"));
+
+	

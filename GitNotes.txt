@@ -1,0 +1,434 @@
+==========================
+GIT Notes:
+==========================
+
+Reference links:
+---------------------------------------
+
+Moving Confluence from Subversion to git 
+http://blogs.atlassian.com/2012/01/moving-confluence-from-subversion-to-git/
+
+Migration Guide for Subversion to Git on Bitbucket
+https://go-dvcs.atlassian.com/display/aod/Migrating+from+Subversion+to+Git+on+Bitbucket
+
+Migrating to BitBucket from Subversion
+http://akrabat.com/computing/migrating-to-bitbucket-from-subversion/
+
+https://bitbucket.org/apusweb/apus-sakai
+https://apusweb.atlassian.net
+
+    Git
+	http://git-scm.com/
+
+	Git server for Windows
+	http://gitstack.com/
+
+	Git Codeschool(first lesson is free)
+	http://gitreal.codeschool.com/
+
+	Git Basics - Working with Remotes
+	http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
+	
+	Cappuccino is an open source framework to build desktop-caliber applications
+	https://github.com/cappuccino/cappuccino
+	
+	ICErepo
+	https://github.com/mattpass/ICErepo#readme
+	
+	TortoiseGit
+	http://code.google.com/p/tortoisegit/wiki/Download
+	
+	**Getting Started – Git-Flow**
+	http://yakiloo.com/getting-started-git-flow/
+	
+	Git-Flow: provide high-level repository operations for Vincent Driessen's branching model
+	https://github.com/nvie/gitflow#readme
+	
+	the skinny on git-flow 
+	http://blog.jessitron.com/2012/07/skinny-on-git-flow.html
+	
+	Why aren't you using git-flow?
+	http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
+	
+	Git create a branch from another branch
+	http://stackoverflow.com/questions/4470523/git-create-a-branch-from-another-branch
+	
+	Git for beginners: The definitive practical guide
+	http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide?rq=1
+	
+	GetOpt - [NOTE: You'll need the getopt for this git plugin to work]
+	http://sourceforge.net/projects/gnuwin32/?source=dlp
+	
+	http://sourceforge.net/projects/gnuwin32/files/libintl/0.14.4/libintl-0.14.4-bin.zip/download?use_mirror=hivelocity&download=
+	
+	GitSvnComparison
+	https://git.wiki.kernel.org/index.php/GitSvnComparison
+	
+	A Git Horror Story: Repository Integrity With Signed Commits
+	http://mikegerwitz.com/papers/git-horror-story.html
+
+	Five Useful Git Tips
+	http://adit.io/posts/2013-08-16-five-useful-git-tips.html
+	
+code school acct - U: learningG33k  p: d0ntf0rg3t
+bitBucket acct - U: learningG33k p: d0ntf0rg3t
+
+
+SVN 2 Git conversion script:
+	./svn2git.sh apus-sakai 1
+	
+	
+
+
+	
+------------------------------   
+Git Commands
+------------------------------
+
+**********************
+Basic commands:
+**********************
+To Fetch code:	
+	git clone https://github.com/ChanCoolKat/appPlayground.git
+- Initialize the local directory as a Git repository.
+
+    git init
+   
+- To add files and/or changed files into Git local repository.
+
+    git add .
+
+- Commit the files that you've staged in your local repository.
+
+    git commit -m "First commit"
+   
+- Add the URL for the remote repository where your local repository will be pushed.   
+   
+    git remote add origin https://github.com/ChanCoolKat/appPlayground.git
+   
+- Verifies the new remote URL
+
+    git remote -v
+
+- Push the changes in your local repository to GitHub.
+
+    git push origin master	
+
+**********************
+Detailed commands:
+**********************	
+Open up Git GUI:
+	gitk
+
+Setting username:
+	git config --global user.name "Name of User"
+	
+					OR
+	git config --local user.name "Name of User"
+	
+Setting email:
+	git config --global user.email theEmailAddress@fake.com
+
+Setting up colors for UI:
+	git config --global color.ui true
+
+Creating an initialized Git repository:
+	git init
+
+Check what's changed:
+	git status
+
+		= unmodified
+
+		M = modified
+
+		A = added
+
+		D = deleted
+
+		R = renamed
+
+		C = copied
+
+		U = updated but unmerged
+
+Add file to staging area:
+	git add nameOfFile.txt nameOfFile2.txt
+	
+					OR
+	git add -all
+	
+	- **NOTE** When working w/ multiple people, make sure to do a pull before a push
+
+Diff file:
+	git diff nameOfFile
+	
+Undo addition:
+	git reset filename.txt
+	
+Commit changes:
+	git commit -m "The comment of a committed file."
+	
+Timeline history:
+	git log
+	
+Getting help on a command:
+	git help config
+
+Ignoring certain temporary files:
+	- create a file named:
+		.gitignore
+
+	- enter any special character of temporary file to ignore
+		~*.*	
+		
+Checkout files from specific commit:
+	git checkout 8b4fe (<--just put the first 5 characters of the commit number of a certain branch.)
+
+Checkout files to the latest changes:
+	git checkout master
+
+Downloading a new git project:
+	git clone git://github.com/cappuccino/cappuccino.git cappuccino
+	git clone --recursive git://github.com/nvie/gitflow.git gitflow
+	
+	git clone https://cmjackson@bitbucket.org/apusweb/apus-sakai.git apusSakaiGit
+	
+	git clone https://bitbucket.org/jkusnetz/apus-sakai.git
+	https://bitbucket.org/jkusnetz/apus-sakai/src
+
+Resetting(Reverting changes):
+	- Soft: Leave working and index untouched
+	- Mixed: Leave working tree untouched, reset index
+	- Hard: Reset working tree and index (discard ALL local changes)
+		git log
+		git reset --hard 8b4fe
+
+Cloning Remote location to local:
+	git clone https://learningG33k@bitbucket.org/learningG33k/online_workbench_sak_test.git  C:/ApusGitRepoFromInternet
+	
+	- make changes to whatever file
+	- add/stage the modifications in files, commit, and push
+		git add* 
+		git commit -m 'Your commit message'
+		git pull
+		git push
+				
+Creating a bare repository
+(typically needed for local sharing): 		
+	
+	git clone --bare nameOfLocalGitRepo nameOfLocalGitRepo.git
+	
+						OR
+	
+	git clone --bare C:/ApusGitRepoFromInternet S://CJackson//BareWorkbench
+	git clone --bare c:/sakairepo/removetestsakai s://cjackson//apussakaigitrepotest
+	
+	- to get repo from the bare repository:
+		git clone S:/CJackson/BareWorkbench C:/nameOfLocalDirectory
+		git clone S:/CJackson/apussakaigitrepotest C:/bob_collab
+		git clone S:/CJackson/apussakaigitrepotest C:/lisa_collab
+	
+Adding or Linking a Remote Origin to repository:	
+	git remote add origin S:\CJackson\online_workbench.git
+	
+	git remote add apusSakaiGit https://cmjackson@bitbucket.org/apusweb/apus-sakai.git 
+	
+	git remote add origin S:/CJackson/ApusSakaiGitRepoTest
+	
+	git push origin master C:\ApusGitRepoFromInternet S:\CJackson\BareWorkbench
+
+Updating/Synching w/ a bare repository:
+	git pull -u origin master
+	
+View current remotes
+	git remote -v
+
+Removing a remote
+	git remote rm master 
+	
+Removing files from a remote
+
+	git rm /filename
+	
+	git commit -a -m "Removing file(s)"
+	
+	git push
+	
+Getting the Commit history 
+(Navigate in directory w/ git source code):
+	git shortlog
+	
+	- -n(numbered) parameter shows output that is weighted based on number of commits
+	  instead of alphabetical order:
+		git shortlog -n
+		
+	- -s parameter gets the number of stages/commits that the repository has gone through from different users.
+		git shortlog -s
+		
+	- filter logs with date range
+		git log --since=2008-09-08 --until=2008-09-09
+		
+	- searching for a word/character match
+		git log --grep="Merge"
+
+Clean up your mess with pattern match:
+	git clean -f -e*.txt
+	
+=================
+Git Tagging
+=================
+	
+Fetch list of git project tags:
+	git tag	
+	
+Creating a lightweight/unannotated tag:
+	git tag nameOfUnannotatedTag
+
+Creating an annotated tag:
+	git tag -a nameOfAnnotatedTag -m 'Name of the Annotated Tag'
+
+Deleting tags:
+	git tag -d nameOfTag
+	
+Browing the changes to the files for a 
+given tagged commit:
+	git show edge_v1.1
+	
+Referencing tags:
+	git checkout 2e361b44
+	git checkout nameOfUnannotatedTag
+
+=================
+Git Branching
+=================
+Creating a new branch:
+	git checkout -b NameOfBranch
+
+	- push the new branch onto bare repository:
+		git push origin NameOfBranch
+		
+		git push apusSakaiGit master
+		
+	- for other users to see the new branch:
+		git pull
+		
+Switching to another branch:
+	git checkout NameOfTargetBranch [ie: master]
+	
+View a list of branches:
+	git branch
+
+	- to see last commit on each branch:
+		git branch -v
+		
+	- go see what branches are merged or not:
+		git branch --merged
+		git branch --no-merged
+	
+Renaming a branch:
+	git branch -m CurrentNameOfBranch NewNameOfBranch
+
+Delete a branch:
+	git branch -d NameOfBranch
+	
+	git branch -D NameOfBranch [Note: delete the entire branch w/o merging anything.]
+	
+	git push origin :NameOfRemoteBranch [Note: delete on a remote location like GitHub.]
+	
+Merging branches:
+- Merges the current/active branch with the specificed branch
+  to incorporate the content.
+  
+	git merge NameOfBranch
+
+Adding simple alias:
+- The following entries will be entered in the .config of the .Git directory.
+	git config --local alias.ad add
+	git config --local alias.st status
+
+- Creating a chain of multiple shell commands:
+	* Add changes and view status on repo:
+		ast = !git add . && git st
+		
+	* Create a new branch and switch to it:
+		bco = "!f(){ git branch ${1} && git checkout ${1}; } ;f"
+	
+	* Commit to the repository:
+		ct = "!f(){ git commit -m \"${1}\";};f"
+
+	* Commit with log:
+	    clog = git commit -m \"${1}\" && git log
+
+
+=================
+Git Patching
+=================
+http://stackoverflow.com/questions/5159185/create-a-git-patch-from-the-changes-in-the-current-working-directory
+http://stackoverflow.com/questions/9396240/how-do-i-simply-create-a-patch-from-my-latest-git-commit
+
+	* If you haven't commited the changes, then:
+		git diff > mypatch.patch
+		
+	* But sometimes it happens that part of the stuff you're doing are new files that are untracked 
+	  and won't be in your 'git diff' output. So, one way to do a patch is to stage everything for 
+	  a new commit (but don't do the commit):
+		git diff --cached > mypatch.patch
+
+	* Apply the patch:
+		git apply mypatch.patch
+
+	* Create the same patches in Tortoise Git:
+	
+		1. Commit your working changes
+		2. Right click the branch root directory and click Tortoise Git -> Create Patch Serial
+			a) Choose whichever range makes sense (Since: FETCH_HEAD will work if you're well-synced)
+			b) Create the patch(es)
+		3. Right click the branch root directory and click Tortise Git -> Show Log
+		4. Right click the commit before your temporary commit(s), and click reset "<branch>" to this...
+		5. Select the Mixed option
+
+	* How to apply patch in Tortoise Git:
+
+		1. Right click the branch root directory and click Tortoise Git -> Apply Patch Serial
+		2. Select the correct patch(es) and apply them
+		3. Right click the branch root directory and click Tortise Git -> Show Log
+		4. Right click the commit before the patch's commit(s), and click reset "<branch>" to this...
+		5. Select the Mixed option
+
+			
+=================
+Git Flow (add-on)
+=================
+* Creating a Git Flow repository:
+	git flow init
+	
+	git flow init -d [NOTE: -d to accept default values]
+
+* Synching local repo to remote repo:
+	git pull origin develop
+
+* See what feature branches you have locally:
+	git flow feature list
+	
+* Creating a new feature "development" branch:
+	git flow feature start nameOfBranch
+
+* Listing of branches on feature "development" branch:
+	git flow feature list
+
+* Publish a feature to centralized Repository for team sharing:
+	git flow feature publish nameOfBranch
+
+* Gitflow user(s) to startup/synch w/ repo:	
+	a) git clone S:/CJackson/ApusSakaiGitFlowRepoTest C:/Name/of/local/directory/to/put/git
+	b) git flow init -d
+
+* Fetching from remote Gitflow repo:
+	git flow feature pull origin ReadmeAdd [NOTE: always do a pull before doing a "git flow feature finish"]
+
+* Finishing a Feature branch [NOTE: basically merges branch into main develop branch and deletes the Feature branch]	
+	git flow feature finish	
+
+* Delete Feature branch on remote branch:
+	git push origin :feature/ReadmeAdd
